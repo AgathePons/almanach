@@ -11,7 +11,7 @@ public class EmbeddingController {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return "Graou \\o/";
     }
 
     public static void main(String[] args) throws Exception {
