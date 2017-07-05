@@ -182,15 +182,48 @@ h1 {
   text-align: center;
   margin: 0;
 }
+.test-background {
+  padding: 25px 50px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.test-background a {
+  margin-bottom: 10px;
+  font-family: 'RobotoSlab-Regular', 'Arial', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.test-background a:hover {
+  text-decoration: underline;
+}
 /* --- layout --- */
 /* body */
 body {
   margin: 0;
-  height: 100%;
-  background-image: url("../img/backgrounds/serpente.jpg");
+  height: 100vh;
+  background-image: url("../img/backgrounds/04-peril.jpg");
   background-color: #010202;
   background-repeat: no-repeat;
-  background-size: 175%;
   background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 /* --- specific styles --- */
