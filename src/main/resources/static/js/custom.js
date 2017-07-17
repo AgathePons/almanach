@@ -28,14 +28,12 @@ $(document).ready(function () {
   
   $( window ).resize(function() {
     windowRatio();
-    //$('body').css('height', '100vh');
   });
   
   // MODAL on click
   // open
   $('.btn-modal').click(function () {
     var buttonId = $(this).attr('id');
-    //var modalClass = null;
     
     $('.modal').each(function() {
       var getClass = $(this).attr('class');

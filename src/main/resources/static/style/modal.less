@@ -25,17 +25,15 @@
     }
     +.container {
       z-index:1;
-      animation:blowUpContent .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
     }
     &.out {
-      transform:scale(0);
+      animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       .modal-background {
         .modal {
           animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         }
       }
       +.container {
-        animation: blowUpContentTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       }
     }
   }
@@ -66,35 +64,6 @@
 
 
 /* animations */
-.keyframes(blowUpContent;
-  {
-    0% {
-      .scale(@factor: 1);
-      opacity:1;
-    }
-    99.9% {
-      .scale(@factor: 2);
-      opacity:0;
-    }
-    100% {
-      .scale(@factor: 0);
-    }
-  }
-);
-
-.keyframes(blowUpContentTwo;
-  {
-    0% {
-      .scale(@factor: 2);
-      opacity:0;
-    }
-    100% {
-      .scale(@factor: 1);
-      opacity:1;
-    }
-  }
-);
-
 .keyframes(blowUpModal;
   {
     0% {

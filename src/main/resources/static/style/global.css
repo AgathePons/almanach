@@ -210,6 +210,7 @@ body.modal-active {
   display: block;
   width: 100vw;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 /* ratio & display */
@@ -322,16 +323,12 @@ h1 {
 }
 .modal-container.opened + .container {
   z-index: 1;
-  animation: blowUpContent 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal-container.opened.out {
-  transform: scale(0);
+  animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal-container.opened.out .modal-background .modal {
   animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-.modal-container.opened.out + .container {
-  animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal-container .modal-background {
   display: -ms-flexbox;
@@ -365,171 +362,6 @@ h1 {
 }
 /* content style */
 /* animations */
-@-webkit-keyframes blowUpContent {
-  0% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  99.9% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-  }
-}
-@-moz-keyframes blowUpContent {
-  0% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  99.9% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-  }
-}
-@-ms-keyframes blowUpContent {
-  0% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  99.9% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-  }
-}
-@-o-keyframes blowUpContent {
-  0% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  99.9% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-  }
-}
-@keyframes blowUpContent {
-  0% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  99.9% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-  }
-}
-@-webkit-keyframes blowUpContentTwo {
-  0% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@-moz-keyframes blowUpContentTwo {
-  0% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@-ms-keyframes blowUpContentTwo {
-  0% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@-o-keyframes blowUpContentTwo {
-  0% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes blowUpContentTwo {
-  0% {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 @-webkit-keyframes blowUpModal {
   0% {
     -webkit-transform: scale(0);
@@ -662,3 +494,6 @@ h1 {
 }
 /* --- specific styles --- */
 /* home only */
+body.home .container-flex {
+  max-height: 100vh;
+}
