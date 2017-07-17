@@ -1,8 +1,6 @@
 /* common elements */
 
 // TEST //
-
-
 h1 {
   .old-regular();
   font-size: 45px;
@@ -11,21 +9,25 @@ h1 {
   margin: 0;
 }
 
-.test-background {
+.test-divers {
   padding: 25px 50px;
   .flex-block();
   .flex-direction(column);
   .align-items(center);
   .justify-content(center);
-  a {
-    margin-bottom: 10px;
-    .roboto-regular();
-    font-size: 20px;
-    color: @white;
-    text-decoration: none;
-    
+  .btn-modal {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px;
+    .roboto-bold();
+    font-size: 18px;
+    color: #010202;
+    background-color: @white;
+    cursor: pointer;
     &:hover {
-      text-decoration: underline;
+      color: @white;
+      background: @black;
     }
   }
 }

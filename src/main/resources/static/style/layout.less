@@ -1,12 +1,29 @@
 /* --- layout --- */
 
+* {
+  box-sizing:border-box;
+}
+
 /* body */
 body {
   margin: 0;
-  height: 100vh;
+  width: 100vw;
   background-image: url("../img/backgrounds/04-peril.jpg");
   background-color: @black;
   background-repeat: no-repeat;
   background-position: center center;
   .background-size(cover);
+  .roboto-regular();
+}
+
+/* ratio & display */
+.error-ratio {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  .align-items(center);
+  .justify-content(center);
+  &.on {
+    .flex-block();
+  }
 }
