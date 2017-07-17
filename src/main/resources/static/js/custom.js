@@ -68,7 +68,7 @@ $(document).ready(function () {
   });
   
   $('.btn-close').click(function () {
-    console.log('clic');
+    //console.log('clic');
     $('.modal-container').addClass('out');
     $('body').removeClass('modal-active');
     $('.container').css('height', '100vh');

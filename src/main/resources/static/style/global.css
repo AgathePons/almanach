@@ -540,6 +540,34 @@ h1 {
 .modal.scroll-content .modal-content .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
   background-color: #ffffff;
 }
+/* RWD */
+@media screen and (max-width: 1023px) {
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+  }
+  .modal .modal-header .btn-close {
+    height: 45px;
+    width: 60px;
+  }
+  .modal .modal-foter .btn-valider {
+    width: 45px;
+    height: 60px;
+  }
+  .modal.scroll-content .modal-header .modal-title {
+    font-size: 20px;
+  }
+  .modal.scroll-content .modal-header .modal-title h2:after {
+    width: 183px;
+    height: 38px;
+    left: calc(50% - 91px);
+  }
+  .modal.scroll-content .modal-content {
+    max-height: none;
+    padding: 45px 8px 0 0;
+  }
+}
 /* animations */
 @-webkit-keyframes blowUpModal {
   0% {

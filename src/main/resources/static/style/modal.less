@@ -151,6 +151,45 @@
   }
 }
 
+/* RWD */
+@media screen and (max-width: 1023px) {
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    .modal-header {
+      .btn-close {
+        height: 45px;
+        width: 60px;
+      }
+    }
+    .modal-foter {
+      .btn-valider {
+      width: 45px;
+      height: 60px;
+    }
+    }
+    &.scroll-content {
+      .modal-header {
+        .modal-title {
+          font-size: 20px;
+          h2 {
+            &:after {
+              width: 183px;
+              height: 38px;
+              left: calc(~"50% - 91px");
+            }
+          }
+        }
+      }
+      .modal-content {
+        max-height: none;
+        padding: 45px 8px 0 0;
+      }
+    }
+  }
+}
+
 /* animations */
 .keyframes(blowUpModal;
   {
