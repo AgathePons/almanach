@@ -10,6 +10,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#010202">
   <!-- favicon -->
   <link rel="shortcut icon" href="img/almanach-favicon.png">
+  <!-- carousel -->
+  <link rel="stylesheet" href="style/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl-carousel/owl.theme.default.min.css">
   <!-- scrollbar -->
   <link rel="stylesheet" href="style/scrollbar/jquery.mCustomScrollbar.css">
   <!-- css global -->
@@ -166,9 +169,15 @@ dans l'univers de Millevaux, et une aide de jeu pour les jeux de rôles ayant li
           </button>
         </div>
         <div class="modal-content">
-          <p>Hear me roar.</p>
-          <h2>I'm a Modal for Slider</h2>
-          <p>Rrroooooaarrr</p>
+          <div class="owl-carousel">
+            <div> Your Content 1 </div>
+            <div> Your Content  2222</div>
+            <div> Your Content 3 ! ! </div>
+            <div> Your Content 4 4</div>
+            <div> Your Content 5 5 5 </div>
+            <div> Your Content 6 ....</div>
+            <div> Your Content 7</div>
+          </div>
         </div>
       </div>
     </div>
@@ -191,9 +200,51 @@ dans l'univers de Millevaux, et une aide de jeu pour les jeux de rôles ayant li
     <h1>Bad Ratio :(</h1>
   </div>
 
+  <!-- FILTRES for GLITCH effect -->
+  <svg class="glitch-effect" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="dist-01">
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="8" result="noise" seed="0"/>
+        <feConvolveMatrix in="noise" order="3" result="snoise"
+        kernelMatrix="
+           0  -1   0
+          -1   5  -1
+           0  -1   0    
+        "/>
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
+      </filter>
+      <filter id="dist-02">
+        <feTurbulence id="turbulence" baseFrequency="0.2" numOctaves="8" result="noise" seed="1"/>
+        <feConvolveMatrix in="noise" order="3" result="snoise"
+        kernelMatrix="
+           0  -1   0
+          -1   5  -1
+           0  -1   0    
+        "/>
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
+      </filter>
+      <filter id="dist-03">
+        <feTurbulence id="turbulence" baseFrequency="0.01" numOctaves="6" result="noise" seed="2"/>
+        <feConvolveMatrix in="noise" order="3" result="snoise"
+        kernelMatrix="
+           0  -1   0
+          -1   5  -1
+           0  -1   0    
+        "/>
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
+      </filter>
+      <filter id="dist-04">
+        <feTurbulence id="turbulence" baseFrequency="0.01" numOctaves="6" result="noise" seed="2"/>
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+      </filter>
+    </defs>
+  </svg>
+  
   <!-- SCRIPTS DIVERS -->
   <!-- jQuery -->
   <script src="js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- carousel -->
+  <script src="js/owl-carousel/owl.carousel.min.js"></script>
   <!-- custom scrollbar -->
   <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   <!-- custom -->

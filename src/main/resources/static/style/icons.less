@@ -3,29 +3,29 @@
 /* close */
 .close_icon {
   .tache {
-    fill: #3d3d3d;
+    fill: @iconColor2;
     opacity: .5;
-    transition: all 1.7s ease;
+    .transition(all 1.7s ease);
   }
   .fond {
-    fill: #3d3d3d;
+    fill: @iconColor2;
   }
   .croix {
-    fill: #010202;
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-    transition: all 3.7s ease;
+    fill: @black;
+    .transform-origin(50% 50%);
+    .rotate(0deg);
+    .transition(all 3.7s ease);
   }
   &:hover {
     cursor: pointer;
     .tache {
-      fill: #fff;
+      fill: @white;
       opacity: 1;
-      transition: all 1.7s ease;
+      .transition(all 1.7s ease);
     }
     .croix {
-      transform: rotate(360deg);
-      transition: all 3.7s ease;
+      .rotate(360deg);
+      .transition(all 3.7s ease);
     }
   }
 }
@@ -33,28 +33,81 @@
 /* valider */
 .valider_icon {
   .tache {
-    fill: #3d3d3d;
+    fill: @iconColor2;
     opacity: .5;
-    transition: all 1.7s ease;
+    .transition(all 1.7s ease);
   }
   .fond {
-    fill: #3d3d3d;
+    fill: @iconColor2;
   }
   .signe {
-    fill: #010202;
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-    transition: all 3.7s ease;
+    fill: @black;
+    .transform-origin(50% 50%);
+    .rotate(0deg);
+    .transition(all 3.7s ease);
   }
   &:hover {
     .tache {
-      fill: #fff;
+      fill: @white;
       opacity: 1;
-      transition: all 1.7s ease;
+      .transition(all 1.7s ease);
     }
     .signe {
-      transform: rotate(360deg);
-      transition: all 3.7s ease;
+      .rotate(360deg);
+      .transition(all 3.7s ease);
     }
   }
 }
+
+/* prev / next */
+.back_icon {
+  .tache {
+    fill: @iconColor2;
+    opacity: .5;
+    .transition(all 1.7s ease);
+  }
+  .fleche {
+    fill: @black;
+  }
+  &:hover {
+    cursor: pointer;
+    .tache {
+      fill: @white;
+      opacity: 1;
+      .transition(all 1.7s ease);
+    }
+    .fleche {
+      .animation(glitch 2s infinite);
+    }
+  }
+}
+
+/* ANIMATIONS */
+.keyframes (glitch;
+  {
+    45% {
+      filter: none;
+    }
+    46% {
+      filter: url(#dist-01);
+    }
+    47% {
+      filter: url(#dist-02);
+    }
+    48% {
+      filter: url(#dist-03);
+    }
+    50% {
+      filter: none;
+    }
+    95% {
+      filter: none;
+    }
+    96% {
+      filter:  url(#dist-02);
+    }
+    97% {
+      filter:  url(#dist-04);
+    }
+  }
+);

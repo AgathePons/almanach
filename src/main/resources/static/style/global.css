@@ -188,51 +188,246 @@
   fill: #3d3d3d;
   opacity: .5;
   transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
 }
 .close_icon .fond {
   fill: #3d3d3d;
 }
 .close_icon .croix {
   fill: #010202;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   transition: all 3.7s ease;
+  -webkit-transition: all 3.7s ease;
+  -o-transition: all 3.7s ease;
+  -moz-transition: all 3.7s ease;
 }
 .close_icon:hover {
   cursor: pointer;
 }
 .close_icon:hover .tache {
-  fill: #fff;
+  fill: #ffffff;
   opacity: 1;
   transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
 }
 .close_icon:hover .croix {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
   transition: all 3.7s ease;
+  -webkit-transition: all 3.7s ease;
+  -o-transition: all 3.7s ease;
+  -moz-transition: all 3.7s ease;
 }
 /* valider */
 .valider_icon .tache {
   fill: #3d3d3d;
   opacity: .5;
   transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
 }
 .valider_icon .fond {
   fill: #3d3d3d;
 }
 .valider_icon .signe {
   fill: #010202;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   transition: all 3.7s ease;
+  -webkit-transition: all 3.7s ease;
+  -o-transition: all 3.7s ease;
+  -moz-transition: all 3.7s ease;
 }
 .valider_icon:hover .tache {
-  fill: #fff;
+  fill: #ffffff;
   opacity: 1;
   transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
 }
 .valider_icon:hover .signe {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
   transition: all 3.7s ease;
+  -webkit-transition: all 3.7s ease;
+  -o-transition: all 3.7s ease;
+  -moz-transition: all 3.7s ease;
+}
+/* prev / next */
+.back_icon .tache {
+  fill: #3d3d3d;
+  opacity: .5;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+.back_icon .fleche {
+  fill: #010202;
+}
+.back_icon:hover {
+  cursor: pointer;
+}
+.back_icon:hover .tache {
+  fill: #ffffff;
+  opacity: 1;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+.back_icon:hover .fleche {
+  -webkit-animation: glitch 2s infinite;
+  -moz-animation: glitch 2s infinite;
+  animation: glitch 2s infinite;
+}
+/* ANIMATIONS */
+@-webkit-keyframes glitch {
+  45% {
+    filter: none;
+  }
+  46% {
+    filter: url(#dist-01);
+  }
+  47% {
+    filter: url(#dist-02);
+  }
+  48% {
+    filter: url(#dist-03);
+  }
+  50% {
+    filter: none;
+  }
+  95% {
+    filter: none;
+  }
+  96% {
+    filter: url(#dist-02);
+  }
+  97% {
+    filter: url(#dist-04);
+  }
+}
+@-moz-keyframes glitch {
+  45% {
+    filter: none;
+  }
+  46% {
+    filter: url(#dist-01);
+  }
+  47% {
+    filter: url(#dist-02);
+  }
+  48% {
+    filter: url(#dist-03);
+  }
+  50% {
+    filter: none;
+  }
+  95% {
+    filter: none;
+  }
+  96% {
+    filter: url(#dist-02);
+  }
+  97% {
+    filter: url(#dist-04);
+  }
+}
+@-ms-keyframes glitch {
+  45% {
+    filter: none;
+  }
+  46% {
+    filter: url(#dist-01);
+  }
+  47% {
+    filter: url(#dist-02);
+  }
+  48% {
+    filter: url(#dist-03);
+  }
+  50% {
+    filter: none;
+  }
+  95% {
+    filter: none;
+  }
+  96% {
+    filter: url(#dist-02);
+  }
+  97% {
+    filter: url(#dist-04);
+  }
+}
+@-o-keyframes glitch {
+  45% {
+    filter: none;
+  }
+  46% {
+    filter: url(#dist-01);
+  }
+  47% {
+    filter: url(#dist-02);
+  }
+  48% {
+    filter: url(#dist-03);
+  }
+  50% {
+    filter: none;
+  }
+  95% {
+    filter: none;
+  }
+  96% {
+    filter: url(#dist-02);
+  }
+  97% {
+    filter: url(#dist-04);
+  }
+}
+@keyframes glitch {
+  45% {
+    filter: none;
+  }
+  46% {
+    filter: url(#dist-01);
+  }
+  47% {
+    filter: url(#dist-02);
+  }
+  48% {
+    filter: url(#dist-03);
+  }
+  50% {
+    filter: none;
+  }
+  95% {
+    filter: none;
+  }
+  96% {
+    filter: url(#dist-02);
+  }
+  97% {
+    filter: url(#dist-04);
+  }
 }
 /* --- layout --- */
 * {
@@ -386,15 +581,21 @@ h1 {
   background: rgba(0, 0, 0, 0.7);
 }
 .modal-container.opened .modal-background .modal {
+  -webkit-animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -moz-animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal-container.opened + .container {
   z-index: 1;
 }
 .modal-container.opened.out {
+  -webkit-animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -moz-animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal-container.opened.out .modal-background .modal {
+  -webkit-animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -moz-animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal-container .modal-background {
@@ -540,6 +741,27 @@ h1 {
 .modal.scroll-content .modal-content .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
   background-color: #ffffff;
 }
+/* modal with slider */
+.modal.illustrations-content {
+  width: 982px;
+  height: 828px;
+  position: relative;
+}
+.modal.illustrations-content .modal-header {
+  z-index: 2;
+}
+.modal.illustrations-content .modal-content .owl-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.modal.illustrations-content .modal-content .owl-carousel .owl-nav [class^="owl-"] {
+  width: 109px;
+  height: 67px;
+}
 /* RWD */
 @media screen and (max-width: 1023px) {
   .modal {
@@ -566,6 +788,10 @@ h1 {
   .modal.scroll-content .modal-content {
     max-height: none;
     padding: 45px 8px 0 0;
+  }
+  .modal.illustrations-content {
+    width: 100vw;
+    height: 100vh;
   }
 }
 /* animations */
