@@ -301,6 +301,11 @@ body.modal-active {
   background-color: transparent;
   cursor: pointer;
 }
+/* reset mise en forme texte */
+strong,
+b {
+  font-weight: normal;
+}
 h1 {
   font-family: 'OldNewspaperTypes', 'Arial', sans-serif;
   font-size: 45px;
@@ -423,7 +428,7 @@ h1 {
   display: -webkit-flex;
   display: flex;
 }
-/* modal style */
+/* modal style global */
 .modal {
   width: 738px;
   height: 720px;
@@ -504,6 +509,36 @@ h1 {
   -ms-flex-grow: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
+}
+/* modal with scrollable content */
+.modal.scroll-content .modal-header .btn-close {
+  width: 60px;
+}
+.modal.scroll-content .modal-content {
+  padding: 50px 12px 0 0;
+  max-height: 610px;
+  font-size: 15px;
+  overflow-y: auto;
+}
+.modal.scroll-content .modal-content .modal-p {
+  margin: 0 0 25px 0;
+}
+.modal.scroll-content .modal-content .modal-p a {
+  font-family: 'RobotoSlab-Bold', 'Arial', sans-serif;
+  color: #010202;
+}
+.modal.scroll-content .modal-content .modal-p strong {
+  font-family: 'RobotoSlab-Bold', 'Arial', sans-serif;
+}
+.modal.scroll-content .modal-content .sub-title {
+  margin: 0 0 20px 0;
+  font-size: 17px;
+}
+.modal.scroll-content .modal-content .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #666666;
+}
+.modal.scroll-content .modal-content .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #ffffff;
 }
 /* animations */
 @-webkit-keyframes blowUpModal {
