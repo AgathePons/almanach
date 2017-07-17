@@ -798,6 +798,18 @@ h1 {
   -ms-flex-grow: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin: 0 auto;
 }
 .modal.illustrations-content .modal-content .owl-carousel .owl-nav [class^="owl-"] {
