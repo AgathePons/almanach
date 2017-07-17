@@ -4,6 +4,7 @@ $(document).ready(function () {
   // Carousel
   $(".owl-carousel").owlCarousel({
     nav : true,
+    navSpeed : 600,
     dots: false,
     items: 1,
     loop: true,
@@ -34,8 +35,6 @@ $(document).ready(function () {
   }
   
   windowRatio();
-  
-  
   $( window ).resize(function() {
     windowRatio();
   });

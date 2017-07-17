@@ -157,7 +157,9 @@
   height: 828px;
   position: relative;
   .modal-header {
-    z-index: 2;
+    .btn-close {
+      z-index: 2;
+    }
   }
   .modal-content {
     .owl-carousel {
@@ -167,10 +169,54 @@
       width: 100%;
       height: 100%;
       padding: 30px;
+      .owl-stage-outer {
+        height: 100%;
+        .owl-stage {
+          height: 100%;
+          .owl-item {
+            height: 100%;
+          }
+        }
+      }
+      .item-slider {
+        height: 100%;
+        .flex-block;
+        .flex-direction(column);
+        .justify-content(space-around);
+        .title {
+          height: 45px;
+          h4 {
+            margin: 0;
+            .old-regular();
+            font-size: 30px;
+            color: @black;
+            text-align: center;
+          }
+        }
+        .illustration {
+          width: 652px;
+          .flex-grow(1);
+          margin: 0 auto;
+        }
+      }
       .owl-nav {
         [class^="owl-"] {
           width: 109px;
           height: 67px;
+          position: absolute;
+          top: calc(~"50% - 33px");
+        }
+        .owl-prev {
+          left: 20px;
+        }
+        .owl-next {
+          right: 20px;
+          .back_icon {
+            .fleche {
+              .transform-origin(54px 33px);
+              .rotate(180deg);
+            }
+          }
         }
       }
     }
@@ -216,6 +262,36 @@
     &.illustrations-content {
       width: 100vw;
       height: 100vh;
+      .modal-content {
+        .owl-carousel {
+          padding: 15px;
+          .item-slider {
+            .illustration {
+              width: 100%;
+              .flex-block();
+              .flex-direction(column);
+              .justify-content(center);
+              padding-bottom: 50px;
+              img {
+                height: 100%;
+              }
+            }
+          }
+          .owl-nav {
+            [class^="owl-"] {
+              bottom: 25px;
+              top: auto;
+            }
+            .owl-next {
+              right: 15px;
+              bottom: 42px;
+            }
+            .owl-prev {
+              left: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }

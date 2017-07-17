@@ -747,7 +747,7 @@ h1 {
   height: 828px;
   position: relative;
 }
-.modal.illustrations-content .modal-header {
+.modal.illustrations-content .modal-header .btn-close {
   z-index: 2;
 }
 .modal.illustrations-content .modal-content .owl-carousel {
@@ -758,9 +758,67 @@ h1 {
   height: 100%;
   padding: 30px;
 }
+.modal.illustrations-content .modal-content .owl-carousel .owl-stage-outer {
+  height: 100%;
+}
+.modal.illustrations-content .modal-content .owl-carousel .owl-stage-outer .owl-stage {
+  height: 100%;
+}
+.modal.illustrations-content .modal-content .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  height: 100%;
+}
+.modal.illustrations-content .modal-content .owl-carousel .item-slider {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: sspace-arounds;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.modal.illustrations-content .modal-content .owl-carousel .item-slider .title {
+  height: 45px;
+}
+.modal.illustrations-content .modal-content .owl-carousel .item-slider .title h4 {
+  margin: 0;
+  font-family: 'OldNewspaperTypes', 'Arial', sans-serif;
+  font-size: 30px;
+  color: #010202;
+  text-align: center;
+}
+.modal.illustrations-content .modal-content .owl-carousel .item-slider .illustration {
+  width: 652px;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  margin: 0 auto;
+}
 .modal.illustrations-content .modal-content .owl-carousel .owl-nav [class^="owl-"] {
   width: 109px;
   height: 67px;
+  position: absolute;
+  top: calc(50% - 33px);
+}
+.modal.illustrations-content .modal-content .owl-carousel .owl-nav .owl-prev {
+  left: 20px;
+}
+.modal.illustrations-content .modal-content .owl-carousel .owl-nav .owl-next {
+  right: 20px;
+}
+.modal.illustrations-content .modal-content .owl-carousel .owl-nav .owl-next .back_icon .fleche {
+  -webkit-transform-origin: 54px 33px;
+  -ms-transform-origin: 54px 33px;
+  transform-origin: 54px 33px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 /* RWD */
 @media screen and (max-width: 1023px) {
@@ -792,6 +850,39 @@ h1 {
   .modal.illustrations-content {
     width: 100vw;
     height: 100vh;
+  }
+  .modal.illustrations-content .modal-content .owl-carousel {
+    padding: 15px;
+  }
+  .modal.illustrations-content .modal-content .owl-carousel .item-slider .illustration {
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: ccenterc;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .modal.illustrations-content .modal-content .owl-carousel .item-slider .illustration img {
+    height: 100%;
+  }
+  .modal.illustrations-content .modal-content .owl-carousel .owl-nav [class^="owl-"] {
+    bottom: 25px;
+    top: auto;
+  }
+  .modal.illustrations-content .modal-content .owl-carousel .owl-nav .owl-next {
+    right: 15px;
+    bottom: 42px;
+  }
+  .modal.illustrations-content .modal-content .owl-carousel .owl-nav .owl-prev {
+    left: 15px;
   }
 }
 /* animations */
