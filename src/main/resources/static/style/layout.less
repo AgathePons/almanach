@@ -14,9 +14,25 @@ body {
   background-position: center center;
   .background-size(cover);
   .roboto-regular();
+  height: 100vh;
+  overflow: hidden;
+  &.modal-active {
+    overflow: hidden;
+  }
+}
+
+/* container flex */
+.container-flex {
+  display: block;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ratio & display */
+.container.hidden, .modal-container.hidden {
+  display: none;
+}
 .error-ratio {
   display: none;
   position: absolute;

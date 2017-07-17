@@ -8,30 +8,34 @@ $(document).ready(function () {
     
     if ((windowHeight < 768 ) && (windowWidth > 1024)) {
       $('.error-ratio').addClass('on');
-      $('.container').hide();
+      $('.container').addClass('hidden');
+      $('.modal-container').addClass('hidden');
     } else if ((windowHeight < 768 ) && (windowWidth > windowHeight)) {
       $('.error-ratio').addClass('on');
-      $('.container').hide();
+      $('.container').addClass('hidden');
+      $('.modal-container').addClass('hidden');
     } else {
       $('.error-ratio').removeClass('on');
-      $('.container').show();
+      $('.container').removeClass('hidden');
+      $('.modal-container').removeClass('hidden');
     }
     
-    console.log(windowHeight);
-    console.log(windowWidth);
+    //console.log(windowHeight);
+    //console.log(windowWidth);
   }
   
   windowRatio();
   
   $( window ).resize(function() {
     windowRatio();
+    //$('body').css('height', '100vh');
   });
   
   // MODAL on click
   // open
   $('.btn-modal').click(function () {
     var buttonId = $(this).attr('id');
-    var modalClass = null;
+    //var modalClass = null;
     
     $('.modal').each(function() {
       var getClass = $(this).attr('class');
@@ -49,7 +53,7 @@ $(document).ready(function () {
     
     //console.log('ID btn cliqué : ' + buttonId);
     
-    $('.modal-container').removeClass("out").addClass("opened");
+    $('.modal-container').removeClass('out').addClass('opened');
     $('body').addClass('modal-active');
   });
   
@@ -57,6 +61,7 @@ $(document).ready(function () {
   $('.modal-container').click(function () {
     $(this).addClass('out');
     $('body').removeClass('modal-active');
+    $('.container').css('height', '100vh');
     $('.modal').removeClass('opened-modal');
   });
 
