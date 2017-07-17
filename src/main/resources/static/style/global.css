@@ -189,7 +189,7 @@
 /* body */
 body {
   margin: 0;
-  width: 100vw;
+  padding: 0;
   background-image: url("../img/backgrounds/04-peril.jpg");
   background-color: #010202;
   background-repeat: no-repeat;
@@ -203,6 +203,7 @@ body {
 /* ratio & display */
 .error-ratio {
   display: none;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   -webkit-box-align: center;
