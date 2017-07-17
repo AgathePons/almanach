@@ -1,0 +1,60 @@
+/* ICON style & animations */
+
+/* close */
+.close_icon {
+  .tache {
+    fill: #3d3d3d;
+    opacity: .5;
+    transition: all 1.7s ease;
+  }
+  .fond {
+    fill: #3d3d3d;
+  }
+  .croix {
+    fill: #010202;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    transition: all 3.7s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    .tache {
+      fill: #fff;
+      opacity: 1;
+      transition: all 1.7s ease;
+    }
+    .croix {
+      transform: rotate(360deg);
+      transition: all 3.7s ease;
+    }
+  }
+}
+
+/* valider */
+.valider_icon {
+  .tache {
+    fill: #3d3d3d;
+    opacity: .5;
+    transition: all 1.7s ease;
+  }
+  .fond {
+    fill: #3d3d3d;
+  }
+  .signe {
+    fill: #010202;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    transition: all 3.7s ease;
+  }
+  &:hover {
+    .tache {
+      fill: #fff;
+      opacity: 1;
+      transition: all 1.7s ease;
+    }
+    .signe {
+      transform: rotate(360deg);
+      transition: all 3.7s ease;
+    }
+  }
+}

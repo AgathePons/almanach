@@ -182,6 +182,58 @@
   height: 7px;
   box-shadow: 2322px 366px 20px #000, 768px 568px 20px #000, 2888px 31px 20px #000, 856px 1581px 20px #000, 2685px 1630px 20px #000, 765px 1730px 20px #000, 1767px 1272px 20px #000, 1965px 1111px 20px #000, 2606px 1625px 20px #000, 2134px 10px 20px #000, 2778px 105px 20px #000, 2550px 455px 20px #000, 2163px 639px 20px #000, 273px 1800px 20px #000, 385px 1807px 20px #000, 107px 821px 20px #000, 2280px 1948px 20px #000, 1288px 492px 20px #000, 2907px 43px 20px #000, 1030px 1110px 20px #000, 1080px 1000px 20px #000, 456px 198px 20px #000, 1999px 333px 20px #000, 232px 1818px 20px #000, 997px 429px 20px #000, 2949px 1323px 20px #000, 1996px 1742px 20px #000, 2145px 289px 20px #000, 43px 311px 20px #000, 136px 987px 20px #000, 691px 157px 20px #000, 1156px 1770px 20px #000, 2386px 165px 20px #000, 1095px 1829px 20px #000, 465px 1898px 20px #000, 925px 995px 20px #000, 79px 241px 20px #000, 295px 184px 20px #000, 2614px 1474px 20px #000, 965px 607px 20px #000, 525px 3px 20px #000, 567px 88px 20px #000, 268px 942px 20px #000, 305px 962px 20px #000, 1840px 1562px 20px #000, 1819px 1260px 20px #000, 1368px 1835px 20px #000, 1856px 1539px 20px #000, 676px 491px 20px #000, 366px 1834px 20px #000, 600px 88px 20px #000, 916px 354px 20px #000, 267px 882px 20px #000, 2074px 1313px 20px #000, 177px 811px 20px #000, 2739px 931px 20px #000, 683px 1045px 20px #000, 1197px 297px 20px #000, 2232px 1916px 20px #000, 2246px 1664px 20px #000, 1965px 90px 20px #000, 1620px 1184px 20px #000, 2049px 1004px 20px #000, 111px 250px 20px #000, 933px 1376px 20px #000, 2317px 1887px 20px #000, 860px 1699px 20px #000, 2151px 1413px 20px #000, 1381px 1039px 20px #000, 2432px 1493px 20px #000, 169px 13px 20px #000, 316px 1989px 20px #000, 2422px 435px 20px #000, 1903px 972px 20px #000, 2415px 715px 20px #000, 530px 912px 20px #000, 1920px 1896px 20px #000, 445px 1782px 20px #000, 1021px 165px 20px #000, 1115px 996px 20px #000, 2907px 808px 20px #000, 2890px 1860px 20px #000, 2420px 427px 20px #000, 1168px 559px 20px #000, 1918px 657px 20px #000, 1979px 1587px 20px #000, 1442px 1277px 20px #000, 1335px 1720px 20px #000, 1821px 321px 20px #000, 1235px 1772px 20px #000, 1316px 151px 20px #000, 460px 1382px 20px #000, 2955px 1963px 20px #000, 1941px 1535px 20px #000, 999px 146px 20px #000, 181px 1395px 20px #000, 1880px 651px 20px #000, 1780px 1656px 20px #000, 1134px 1165px 20px #000, 1447px 1809px 20px #000, 2731px 770px 20px #000, 866px 353px 20px #000, 1240px 1343px 20px #000, 2654px 1492px 20px #000, 1177px 945px 20px #000, 1804px 706px 20px #000, 1281px 468px 20px #000, 1089px 881px 20px #000, 2802px 605px 20px #000, 1129px 1641px 20px #000, 1318px 980px 20px #000, 740px 974px 20px #000, 2840px 1533px 20px #000, 767px 1403px 20px #000, 2560px 33px 20px #000, 1980px 263px 20px #000, 129px 343px 20px #000, 739px 944px 20px #000, 2684px 872px 20px #000, 2493px 891px 20px #000, 2439px 1357px 20px #000, 2524px 1112px 20px #000, 2211px 448px 20px #000, 2946px 892px 20px #000, 2174px 383px 20px #000, 648px 39px 20px #000, 157px 985px 20px #000, 2607px 357px 20px #000, 1565px 1874px 20px #000, 175px 282px 20px #000, 322px 1487px 20px #000, 2093px 1127px 20px #000, 253px 818px 20px #000, 1212px 509px 20px #000, 128px 1571px 20px #000, 11px 868px 20px #000, 431px 315px 20px #000, 1706px 239px 20px #000, 1857px 562px 20px #000, 1608px 1505px 20px #000, 264px 1574px 20px #000, 785px 1925px 20px #000, 44px 1590px 20px #000, 441px 747px 20px #000, 2214px 435px 20px #000, 434px 99px 20px #000, 1930px 100px 20px #000, 753px 1876px 20px #000, 2901px 1582px 20px #000, 2776px 1935px 20px #000;
 }
+/* ICON style & animations */
+/* close */
+.close_icon .tache {
+  fill: #3d3d3d;
+  opacity: .5;
+  transition: all 1.7s ease;
+}
+.close_icon .fond {
+  fill: #3d3d3d;
+}
+.close_icon .croix {
+  fill: #010202;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  transition: all 3.7s ease;
+}
+.close_icon:hover {
+  cursor: pointer;
+}
+.close_icon:hover .tache {
+  fill: #fff;
+  opacity: 1;
+  transition: all 1.7s ease;
+}
+.close_icon:hover .croix {
+  transform: rotate(360deg);
+  transition: all 3.7s ease;
+}
+/* valider */
+.valider_icon .tache {
+  fill: #3d3d3d;
+  opacity: .5;
+  transition: all 1.7s ease;
+}
+.valider_icon .fond {
+  fill: #3d3d3d;
+}
+.valider_icon .signe {
+  fill: #010202;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  transition: all 3.7s ease;
+}
+.valider_icon:hover .tache {
+  fill: #fff;
+  opacity: 1;
+  transition: all 1.7s ease;
+}
+.valider_icon:hover .signe {
+  transform: rotate(360deg);
+  transition: all 3.7s ease;
+}
 /* --- layout --- */
 * {
   box-sizing: border-box;
@@ -240,6 +292,15 @@ body.modal-active {
   display: flex;
 }
 /* common elements */
+/* reset button */
+[class^="btn-"] {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
 h1 {
   font-family: 'OldNewspaperTypes', 'Arial', sans-serif;
   font-size: 45px;
@@ -272,6 +333,7 @@ h1 {
   text-align: center;
   padding: 10px 15px;
   margin: 10px;
+  border: none;
   font-family: 'RobotoSlab-Bold', 'Arial', sans-serif;
   font-size: 18px;
   color: #010202;
@@ -353,14 +415,96 @@ h1 {
   background: #ececec;
   -webkit-box-shadow: 0px 0px 80px 80px #010202;
   box-shadow: 0px 0px 80px 80px #010202;
-  padding: 50px;
   color: #010202;
   position: relative;
 }
 .modal-container .modal-background .modal.opened-modal {
-  display: inline-block;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
-/* content style */
+/* modal style */
+.modal {
+  width: 738px;
+  height: 720px;
+  padding: 30px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.modal .modal-header {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.modal .modal-header .modal-title {
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-family: 'OldNewspaperTypes', 'Arial', sans-serif;
+  color: #333333;
+  font-size: 25px;
+}
+.modal .modal-header .modal-title h2 {
+  margin: -25px 0 0 0;
+  position: relative;
+}
+.modal .modal-header .modal-title h2.after-decoration:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 225px;
+  height: 47px;
+  left: calc(50% - 112px);
+  bottom: -50px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg class='separator_icon' enable-background='new 0 0 578.93 121.819' height='121.819' viewBox='0 0 578.93 121.819' width='578.93' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m434.62 20.306c17.481-16.46 118.505 42.174 144.31 60.265-16.216-18.62-69.65-48.15-90.773-55.479 17.557-1.407 45.826-1.338 61.506 3.911-9.434-9.169-51.211-13.113-67.034-8.658-22.815-10.371-43.134-11.327-48.913-9.072-13.023-5.527-36.563-7.224-45.674-8.357-9.117-1.132-29.212 3.252-40.086 11.454-5.395.605-21.725-8.273-23.363-8.273-1.641 0-4.146.979-4.146.979v.042c-7 .139-83.397-9.275-94.685-6.656-11.079 2.57-69.233 6.548-78.315 6.488v-.042c-11-3.473-22.116-6.555-23.649-5.979-3.319 1.234-19.021-2.261-32.307.884-13.767 2.071-71.728 12.079-91.491 21.34 12.6-5.095 80.807-13.333 80.807-13.333s-10.735 15.128-19.846 23.417c-5.078 4.617-33.768 19.718-44.655 28.114l-4.221 2.496 5.226-1.218c12.609-5.82 38.706-21.322 38.706-21.322s-14.767 15.982-28.823 32.781l-3.057 6.33 5.212-4.048c22.182-20.077 63.324-74.107 78.886-70.036 9.731 2.549 22.086 5.569 34.969 9.173l3.242.093v.028c6 .853 74.087-7.121 83.761-8.912 9.587-1.775 81.877 14.04 90.306 13.919 1.709 1.183 3.366 2.414 4.894 3.766 11.509 7.856 16.819 7.277 24.581 1.022 7.757-6.237 24.526-14.016 52.899-11.253 28.387 2.742 23.756 7.029 23.756 7.029s37.596 60.06 94.006 100.618l2.693-1.896c-30.218-26.793-70.929-61.9-88.722-99.615z' fill='%236d6d6d'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.modal .modal-header .btn-close {
+  width: 75px;
+  height: 57px;
+  margin-top: -7px;
+  margin-right: -12px;
+}
+.modal .modal-footer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.modal .modal-footer .btn-valider {
+  width: 75px;
+  height: 57px;
+}
+.modal .modal-content {
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
 /* animations */
 @-webkit-keyframes blowUpModal {
   0% {

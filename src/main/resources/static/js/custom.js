@@ -67,4 +67,21 @@ $(document).ready(function () {
     event.stopPropagation();
   });
   
+  $('.btn-close').click(function () {
+    console.log('clic');
+    $('.modal-container').addClass('out');
+    $('body').removeClass('modal-active');
+    $('.container').css('height', '100vh');
+    $('.modal').removeClass('opened-modal');
+  });
+  
+  $('.btn-valider').click(function () {
+    console.log('clic');
+    $('.modal-container').addClass('out');
+    $('body').removeClass('modal-active');
+    $('.container').css('height', '100vh');
+    $('.modal').removeClass('opened-modal');
+  });
+
+  
 });
