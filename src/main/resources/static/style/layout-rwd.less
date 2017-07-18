@@ -1,0 +1,53 @@
+/* RWD for layout */
+@media screen and (max-width: 1023px) {
+  .container-flex {
+    padding: 15px;
+  }
+  
+  header {
+    .rwd-title {
+      display: block;
+    }
+    nav {
+      position: fixed;
+      .justify-content(space-around);
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 52px;
+      background-color: rgba(0, 0, 0, .5);
+      .nav {
+        width: 61px;
+      }
+      .title {
+        display: none;
+      }
+      .consultation {
+        .btn-nav-consultation {
+          width: 35px;
+          height: auto;
+        }
+      }
+      .illustrations {
+        .btn-nav-ilustrations {
+          width: 45px;
+          height: auto;
+        }
+      }
+      .infos {
+        .btn-nav-infos {
+          width: 34px;
+          height: auto;
+          padding-top: 4px;
+        }
+      }
+      .contributeurs {
+        .btn-nav-contributeurs {
+          width: 41px;
+          height: auto;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1525,7 +1525,7 @@
 .illustrations_icon:hover .forme {
   animation: rotation-infinite 1.3s linear infinite;
   fill: #6d6d6d;
-  transition: all .7s ease;
+  transition: all 1s ease;
 }
 .illustrations_icon:hover .points {
   transition: all 1.7s ease;
@@ -1710,7 +1710,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../img/backgrounds/04-peril.jpg");
+  background-image: url("../img/backgrounds/11-vomembres.jpg");
   background-color: #010202;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1735,7 +1735,38 @@ body.modal-active {
   padding: 0 80px;
 }
 /* header */
+header .rwd-title {
+  display: none;
+  text-align: center;
+}
+header .rwd-title a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'OldNewspaperTypes', 'Arial', sans-serif;
+}
+header .rwd-title a h1 {
+  text-transform: uppercase;
+  line-height: .9;
+  font-size: 45px;
+  margin: 0;
+}
+header .rwd-title a span {
+  display: inline-block;
+  font-size: 37px;
+  margin-right: 8px;
+}
+header .rwd-title a h2 {
+  text-transform: uppercase;
+  font-size: 37px;
+  display: inline-block;
+  margin: 0;
+}
+header h1 {
+  margin: 0;
+}
 header nav {
+  position: relative;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -1823,10 +1854,61 @@ header nav .contributeurs .btn-nav-contributeurs {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.error-ratio h1 {
+  font-family: 'OldNewspaperTypes', 'Arial', sans-serif;
+  color: #ffffff;
+  font-size: 45px;
+}
 .error-ratio.on {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+/* RWD for layout */
+@media screen and (max-width: 1023px) {
+  .container-flex {
+    padding: 15px;
+  }
+  header .rwd-title {
+    display: block;
+  }
+  header nav {
+    position: fixed;
+    -webkit-box-pack: space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack: sspace-arounds;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 52px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  header nav .nav {
+    width: 61px;
+  }
+  header nav .title {
+    display: none;
+  }
+  header nav .consultation .btn-nav-consultation {
+    width: 35px;
+    height: auto;
+  }
+  header nav .illustrations .btn-nav-ilustrations {
+    width: 45px;
+    height: auto;
+  }
+  header nav .infos .btn-nav-infos {
+    width: 34px;
+    height: auto;
+    padding-top: 4px;
+  }
+  header nav .contributeurs .btn-nav-contributeurs {
+    width: 41px;
+    height: auto;
+    padding-top: 3px;
+  }
 }
 /* common elements */
 /* reset button */
