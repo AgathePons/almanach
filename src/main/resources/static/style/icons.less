@@ -445,6 +445,9 @@
   }
   .forme {
     fill: @iconColor3;
+    .cercle {
+      fill: @iconColor1;
+    }
     .fleche {
       fill: @iconColor3;
       .transform-origin(50% 50%);
@@ -454,6 +457,7 @@
   }
   .branches {
     fill: @iconColor1;
+    .transition(all 1.7s ease);
     .branche1 {
       .transform-origin(0% 100%);
     }
@@ -476,6 +480,8 @@
   &:hover {
     cursor: pointer;
     .branches {
+      fill: @iconColor3;
+      .transition(all 1.7s ease);
       .branche1 {
         .animation(rotation1 .7s ease forwards);
         animation-delay: 3.0s;

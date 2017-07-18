@@ -226,6 +226,36 @@
   }
 }
 
+/* modal with list */
+.list-content {
+  .modal-content {
+    padding: 25px 0;
+    .flex-block();
+    .list-item {
+      width: 100%;
+      .flex-block();
+      .flex-direction(column);
+      .one-item {
+        .flex-grow(1);
+        .flex-block();
+        .align-items(center);
+        .justify-content(center);
+        .old-regular();
+        font-size: 30px;
+        color: @greyText1;
+        .gribouilli {
+          display: inline-block;
+          width: 45px;
+          height: 43px;
+        }
+        .tache {
+          
+        }
+      }
+    }
+  }
+}
+
 /* RWD */
 @media screen and (max-width: 1023px) {
   .modal {
