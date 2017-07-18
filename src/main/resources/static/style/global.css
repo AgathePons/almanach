@@ -1766,7 +1766,7 @@ header h1 {
   margin: 0;
 }
 header nav {
-  position: relative;
+  position: initial;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
