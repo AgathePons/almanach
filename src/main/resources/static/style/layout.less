@@ -28,6 +28,73 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* header */
+header {
+  nav {
+    .flex-block();
+    .align-items(center);
+    .justify-content(space-between);
+    height: 130px;
+    .nav {
+      width: 100px;
+      text-align: center;
+    }
+    .consultation {
+      .btn-nav-consultation {
+        width: 85px;
+        height: 108px;
+        margin-top: 15px;
+      }
+    }
+    .illustrations {
+      .btn-nav-ilustrations {
+        width: 100px;
+        height: 83px;
+      }
+    }
+    .title {
+      .flex-grow(1);
+      text-align: center;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: @white;
+        .old-regular();
+        h1 {
+          text-transform: uppercase;
+          line-height: .9;
+          font-size: 45px;
+          margin: 0;
+        }
+        span {
+          display: inline-block;
+          font-size: 37px;
+          margin-right: 8px;
+        }
+        h2 {
+          text-transform: uppercase;
+          font-size: 37px;
+          display: inline-block;
+          margin: 0;
+        }
+      }
+    }
+    .infos {
+      .btn-nav-infos {
+        width: 76px;
+        height: 84px;
+      }
+    }
+    .contributeurs {
+      .btn-nav-contributeurs {
+        width: 97px;
+        height: 95px;
+      }
+    }
+  }
 }
 
 /* ratio & display */

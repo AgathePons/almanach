@@ -1,4 +1,223 @@
-/* ICON style & animations */
+/* --- ICON style & animations --- */
+
+/* -- ANIMATIONS -- */
+
+/* glitch */
+.keyframes (glitch;
+  {
+    45% {
+      filter: none;
+    }
+    46% {
+      filter: url(#dist-01);
+    }
+    47% {
+      filter: url(#dist-02);
+    }
+    48% {
+      filter: url(#dist-03);
+    }
+    50% {
+      filter: none;
+    }
+    95% {
+      filter: none;
+    }
+    96% {
+      filter:  url(#dist-02);
+    }
+    97% {
+      filter:  url(#dist-04);
+    }
+  }
+);
+
+/* tremblements */
+
+.keyframes(tremblement1;
+  {
+    10% {
+      .transform(translate(2px, 3px) rotate(-5deg));
+      opacity: 1;
+    }
+    20% {
+      .transform(translate(3px, 3px) rotate(-4deg));
+      opacity: 0.71;
+    }
+    30% {
+      .transform(translate(2px, 7px) rotate(3deg));
+      opacity: 0.83;
+    }
+    40% {
+      .transform(translate(5px, 8px) rotate(-4deg));
+      opacity: 0.5;
+    }
+    50% {
+      .transform(translate(7px, -5px) rotate(5deg));
+      opacity: 0.71;
+    }
+    60% {
+      .transform(translate(-6px, 7px) rotate(2deg));
+      opacity: 0.42;
+    }
+    70% {
+      .transform(translate(-5px, 8px) rotate(3deg));
+      opacity: 0.7;
+    }
+    80% {
+      .transform(translate(-7px, -1px) rotate(-2deg));
+      opacity: 0.62;
+    }
+    90% {
+      .transform(translate(-4px, 2px) rotate(4deg));
+      opacity: 0.5;
+    }
+    0%, 100% {
+      .transform(translate(0, 0) rotate(0));
+    }
+  }
+);
+
+.keyframes(tremblement2;
+  {
+    10% {
+      .transform(translate(2px, 3px) rotate(-5deg));
+      opacity: 1;
+    }
+    20% {
+      .transform(translate(3px, 3px) rotate(-4deg));
+      opacity: 0.81;
+    }
+    30% {
+      .transform(translate(2px, -5px) rotate(3deg));
+      opacity: 0.93;
+    }
+    40% {
+      .transform(translate(4px, 2px) rotate(-4deg));
+      opacity: 0.75;
+    }
+    50% {
+      .transform(translate(2px, -7px) rotate(5deg));
+      opacity: 0.81;
+    }
+    60% {
+      .transform(translate(-6px, -2px) rotate(2deg));
+      opacity: 0.52;
+    }
+    70% {
+      .transform(translate(-5px, 4px) rotate(3deg));
+      opacity: 0.8;
+    }
+    80% {
+      .transform(translate(-7px, -1px) rotate(-2deg));
+      opacity: 0.62;
+    }
+    90% {
+      .transform(translate(-4px, 2px) rotate(4deg));
+      opacity: 0.6;
+    }
+    0%, 100% {
+      .transform(translate(0, 0) rotate(0));
+    }
+  }
+);
+
+/* rotations */
+.keyframes(rotation1;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(170deg));
+    }
+  }
+);
+
+.keyframes(rotation2;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(120deg));
+    }
+  }
+);
+
+.keyframes(rotation3;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(260deg));
+    }
+  }
+);
+
+.keyframes(rotation4;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(-200deg));
+    }
+  }
+);
+
+.keyframes(rotation5;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(-230deg));
+    }
+  }
+);
+
+.keyframes(rotation6;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(-290deg));
+    }
+  }
+);
+
+@keyframes rotation-infinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* pulsation */
+@keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+/* -- ICONS -- */
 
 /* close */
 .close_icon {
@@ -82,32 +301,217 @@
   }
 }
 
-/* ANIMATIONS */
-.keyframes (glitch;
-  {
-    45% {
-      filter: none;
+/* consulter */
+.consulter_icon {
+  .taches {
+    fill: @iconColor2;
+    opacity: .5;
+    .transition(all 1.7s ease);
+  }
+  .forme {
+    fill: @iconColor3;
+    .transition(all 1.7s ease);
+  }
+  .oeil1 {
+    fill:@iconColor1;
+    opacity: 1;
+    .transition(all .7s ease;)
+  }
+  .oeil2 {
+    .transition(all 1.7s ease);
+    fill: @iconColor3;
+    opacity: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    .taches {
+      fill: @white;
+      opacity: 1;
+      .transition(all 1.7s ease);
     }
-    46% {
-      filter: url(#dist-01);
+    .forme {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+      .animation(glitch 2s infinite);
     }
-    47% {
-      filter: url(#dist-02);
+    .oeil1 {
+      opacity: 0;
+      .transition(all .7s ease;)
     }
-    48% {
-      filter: url(#dist-03);
-    }
-    50% {
-      filter: none;
-    }
-    95% {
-      filter: none;
-    }
-    96% {
-      filter:  url(#dist-02);
-    }
-    97% {
-      filter:  url(#dist-04);
+    .oeil2 {
+      .animation(tremblement2 0.5s infinite);
+      fille: @white;
+      opacity: 1;
+      .transition(all 1.7s ease);
     }
   }
-);
+}
+
+/* illustrations */
+.illustrations_icon {
+  .forme {
+    fill: @iconColor3;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    transition: all .7s ease;
+  }
+  .points {
+    fill: @iconColor1;
+    opacity: 1;
+    transition: all .7s ease;
+  }
+  &:hover {
+    .forme {
+      animation: rotation-infinite 1.3s linear infinite;
+      fill: @iconColor1;
+      transition: all .7s ease;
+    }
+    .points {
+      transition: all 1.7s ease;
+      [class^="point"] {
+        fill: @white;
+        opacity: 0;
+        transition: all 1.7s ease;
+        animation: pulse8 2s infinite;
+      }
+      .point9 {
+        animation-delay: 0;
+      }
+      .point8 {
+        animation-delay: .2s;
+      }
+      .point7 {
+        animation-delay: .4s;
+      }
+      .point6 {
+        animation-delay: .6s;
+      }
+      .point5 {
+        animation-delay: .8s;
+      }
+      .point4 {
+        animation-delay: 1.0s;
+      }
+      .point3 {
+        animation-delay: 1.2s;
+      }
+      .point2 {
+        animation-delay: 1.4s;
+      }
+      .point1 {
+        animation-delay: 1.6s;
+      }
+    }
+  }
+}
+
+/* infos */
+.info_icon {
+  .fond {
+    fill: @iconColor1;
+    opacity: .5;
+  }
+  .interrogation {
+    fill: @iconColor3;
+    transform-origin: 60% 50%;
+    transition: all 1.7s ease;
+  }
+  .tache {
+    fill: @iconColor3;
+    transform-origin: 60% 50%;
+    transition: all 1.7s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    .tache {
+      fill: @black;
+      transition: all 1.7s ease;
+      .animation(tremblement1 0.5s infinite);
+    }
+    .interrogation {
+      fill: @white;
+      transition: all 1.7s ease;
+      .animation(tremblement1 0.5s infinite);
+    }
+  }
+}
+
+/* contributeurs */
+.contributeurs_icon {
+  .tache {
+    fill: #3d3d3d;
+    opacity: .5;
+    .transition(all 1.7s ease);
+  }
+  .forme {
+    fill: @iconColor3;
+    .fleche {
+      fill: @iconColor3;
+      .transform-origin(50% 50%);
+      .rotate(0deg);
+      .transition(all 2.7s ease-out);
+    }
+  }
+  .branches {
+    fill: @iconColor1;
+    .branche1 {
+      .transform-origin(0% 100%);
+    }
+    .branche2 {
+      .transform-origin(0% 0%);
+    }
+    .branche3 {
+      .transform-origin(5% 40%);
+    }
+    .branche4 {
+      .transform-origin(100% 0%);
+    }
+    .branche5 {
+      .transform-origin(100% 95%);
+    }
+    .branche6 {
+      .transform-origin(96% 95%);
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .branches {
+      .branche1 {
+        .animation(rotation1 .7s ease forwards);
+        animation-delay: 3.0s;
+      }
+      .branche2 {
+        .animation(rotation2 .9s ease forwards);
+        animation-delay: 2.8s;
+      }
+      .branche3 {
+        .animation(rotation3 1.1s ease forwards);
+        animation-delay: 2.7s;
+      }
+      .branche4 {
+        .animation(rotation4 .8s ease forwards);
+        animation-delay: 2.6s;
+      }
+      .branche5 {
+        .animation(rotation5 .8s ease forwards);
+        animation-delay: 2.3s;
+      }
+      .branche6 {
+        .animation(rotation6 1.0s ease forwards);
+        animation-delay: 2.7s;
+      }
+    }
+    .tache {
+      fill: @black;
+      opacity: 1;
+      transition: all 1.7s ease;
+    }
+    .forme {
+      .fleche {
+        fill: @white;
+        transform: rotate(180deg);
+        transition: all 2.7s ease-in;
+      }
+    }
+  }
+}
