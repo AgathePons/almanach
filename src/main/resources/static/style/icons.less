@@ -220,303 +220,332 @@
 /* -- ICONS -- */
 
 /* close */
-.close_icon {
-  .tache {
-    fill: @iconColor2;
-    opacity: .5;
-    .transition(all 1.7s ease);
-  }
-  .fond {
-    fill: @iconColor2;
-  }
-  .croix {
-    fill: @black;
-    .transform-origin(50% 50%);
-    .rotate(0deg);
-    .transition(all 3.7s ease);
-  }
-  &:hover {
-    cursor: pointer;
+[class^="btn-"] {
+  .close_icon {
     .tache {
-      fill: @white;
-      opacity: 1;
+      fill: @iconColor2;
+      opacity: .5;
       .transition(all 1.7s ease);
     }
+    .fond {
+      fill: @iconColor2;
+    }
     .croix {
-      .rotate(360deg);
+      fill: @black;
+      .transform-origin(50% 50%);
+      .rotate(0deg);
       .transition(all 3.7s ease);
+    }
+  }
+  &:hover {
+    .close_icon {
+      cursor: pointer;
+      .tache {
+        fill: @white;
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+      .croix {
+        .rotate(360deg);
+        .transition(all 3.7s ease);
+      }
     }
   }
 }
 
 /* valider */
-.valider_icon {
-  .tache {
-    fill: @iconColor2;
-    opacity: .5;
-    .transition(all 1.7s ease);
-  }
-  .fond {
-    fill: @iconColor2;
-  }
-  .signe {
-    fill: @black;
-    .transform-origin(50% 50%);
-    .rotate(0deg);
-    .transition(all 3.7s ease);
-  }
-  &:hover {
+[class^="btn-"] {
+  .valider_icon {
     .tache {
-      fill: @white;
-      opacity: 1;
+      fill: @iconColor2;
+      opacity: .5;
       .transition(all 1.7s ease);
     }
+    .fond {
+      fill: @iconColor2;
+    }
     .signe {
-      .rotate(360deg);
+      fill: @black;
+      .transform-origin(50% 50%);
+      .rotate(0deg);
       .transition(all 3.7s ease);
+    }
+  }
+  &:hover {
+    .valider_icon {
+      .tache {
+        fill: @white;
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+      .signe {
+        .rotate(360deg);
+        .transition(all 3.7s ease);
+      }
     }
   }
 }
 
 /* prev / next */
-.back_icon {
-  .tache {
-    fill: @iconColor2;
-    opacity: .5;
-    .transition(all 1.7s ease);
-  }
-  .fleche {
-    fill: @black;
-  }
-  &:hover {
-    cursor: pointer;
+[class^="btn-"], .owl-prev, .owl-next {
+  .back_icon {
     .tache {
-      fill: @white;
-      opacity: 1;
+      fill: @iconColor2;
+      opacity: .5;
       .transition(all 1.7s ease);
     }
     .fleche {
-      .animation(glitch 2s infinite);
+      fill: @black;
+    }
+  }
+  &:hover {
+    .back_icon {
+      cursor: pointer;
+      .tache {
+        fill: @white;
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+      .fleche {
+        .animation(glitch 2s infinite);
+      }
     }
   }
 }
 
 /* consulter */
-.consulter_icon {
-  .taches {
-    fill: @iconColor2;
-    opacity: .5;
-    .transition(all 1.7s ease);
-  }
-  .forme {
-    fill: @iconColor3;
-    .transition(all 1.7s ease);
-  }
-  .oeil1 {
-    fill:@iconColor1;
-    opacity: 1;
-    .transition(all .7s ease;)
-  }
-  .oeil2 {
-    .transition(all 1.7s ease);
-    fill: @iconColor3;
-    opacity: 0;
-  }
-  &:hover {
-    cursor: pointer;
+[class^="btn-"] {
+  .consulter_icon {
     .taches {
-      fill: @white;
-      opacity: 1;
+      fill: @iconColor2;
+      opacity: .5;
       .transition(all 1.7s ease);
     }
     .forme {
-      fill: @iconColor1;
+      fill: @iconColor3;
       .transition(all 1.7s ease);
-      .animation(glitch 2s infinite);
     }
     .oeil1 {
-      opacity: 0;
+      fill:@iconColor1;
+      opacity: 1;
       .transition(all .7s ease;)
     }
     .oeil2 {
-      .animation(tremblement2 0.5s infinite);
-      fille: @white;
-      opacity: 1;
       .transition(all 1.7s ease);
+      fill: @iconColor3;
+      opacity: 0;
+    }
+  }
+  &:hover {
+    .consulter_icon {
+      cursor: pointer;
+      .taches {
+        fill: @white;
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+      .forme {
+        fill: @iconColor1;
+        .transition(all 1.7s ease);
+        .animation(glitch 2s infinite);
+      }
+      .oeil1 {
+        opacity: 0;
+        .transition(all .7s ease;)
+      }
+      .oeil2 {
+        .animation(tremblement2 0.5s infinite);
+        fille: @white;
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
     }
   }
 }
 
 /* illustrations */
-.illustrations_icon {
-  .forme {
-    fill: @iconColor3;
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-    transition: all .7s ease;
-  }
-  .points {
-    fill: @iconColor1;
-    opacity: 1;
-    transition: all .7s ease;
-  }
-  &:hover {
+[class^="btn-"] {
+  .illustrations_icon {
     .forme {
-      animation: rotation-infinite 1.3s linear infinite;
-      fill: @iconColor1;
-      transition: all 1s ease;
+      fill: @iconColor3;
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+      transition: all .7s ease;
     }
     .points {
-      transition: all 1.7s ease;
-      [class^="point"] {
-        fill: @white;
-        opacity: 0;
+      fill: @iconColor1;
+      opacity: 1;
+      transition: all .7s ease;
+    }
+  }
+  &:hover {
+    .illustrations_icon {
+      .forme {
+        animation: rotation-infinite 1.3s linear infinite;
+        fill: @iconColor1;
+        transition: all 1s ease;
+      }
+      .points {
         transition: all 1.7s ease;
-        animation: pulse8 2s infinite;
-      }
-      .point9 {
-        animation-delay: 0;
-      }
-      .point8 {
-        animation-delay: .2s;
-      }
-      .point7 {
-        animation-delay: .4s;
-      }
-      .point6 {
-        animation-delay: .6s;
-      }
-      .point5 {
-        animation-delay: .8s;
-      }
-      .point4 {
-        animation-delay: 1.0s;
-      }
-      .point3 {
-        animation-delay: 1.2s;
-      }
-      .point2 {
-        animation-delay: 1.4s;
-      }
-      .point1 {
-        animation-delay: 1.6s;
+        [class^="point"] {
+          fill: @white;
+          opacity: 0;
+          transition: all 1.7s ease;
+          animation: pulse8 2s infinite;
+        }
+        .point9 {
+          animation-delay: 0;
+        }
+        .point8 {
+          animation-delay: .2s;
+        }
+        .point7 {
+          animation-delay: .4s;
+        }
+        .point6 {
+          animation-delay: .6s;
+        }
+        .point5 {
+          animation-delay: .8s;
+        }
+        .point4 {
+          animation-delay: 1.0s;
+        }
+        .point3 {
+          animation-delay: 1.2s;
+        }
+        .point2 {
+          animation-delay: 1.4s;
+        }
+        .point1 {
+          animation-delay: 1.6s;
+        }
       }
     }
   }
 }
 
+
 /* infos */
-.info_icon {
-  .fond {
-    fill: @iconColor1;
-    opacity: .5;
-  }
-  .interrogation {
-    fill: @iconColor3;
-    transform-origin: 60% 50%;
-    transition: all 1.7s ease;
-  }
-  .tache {
-    fill: @iconColor3;
-    transform-origin: 60% 50%;
-    transition: all 1.7s ease;
-  }
-  &:hover {
-    cursor: pointer;
-    .tache {
-      fill: @black;
-      transition: all 1.7s ease;
-      .animation(tremblement1 0.5s infinite);
+[class^="btn-"] {
+  .info_icon {
+    .fond {
+      fill: @iconColor1;
+      opacity: .5;
     }
     .interrogation {
-      fill: @white;
+      fill: @iconColor3;
+      transform-origin: 60% 50%;
       transition: all 1.7s ease;
-      .animation(tremblement1 0.5s infinite);
+    }
+    .tache {
+      fill: @iconColor3;
+      transform-origin: 60% 50%;
+      transition: all 1.7s ease;
+    }
+  }
+  &:hover {
+    .info_icon {
+      cursor: pointer;
+      .tache {
+        fill: @black;
+        transition: all 1.7s ease;
+        .animation(tremblement1 0.5s infinite);
+      }
+      .interrogation {
+        fill: @white;
+        transition: all 1.7s ease;
+        .animation(tremblement1 0.5s infinite);
+      }
     }
   }
 }
 
 /* contributeurs */
-.contributeurs_icon {
-  .tache {
-    fill: #3d3d3d;
-    opacity: .5;
-    .transition(all 1.7s ease);
-  }
-  .forme {
-    fill: @iconColor3;
-    .cercle {
-      fill: @iconColor1;
-    }
-    .fleche {
-      fill: @iconColor3;
-      .transform-origin(50% 50%);
-      .rotate(0deg);
-      .transition(all 2.7s ease-out);
-    }
-  }
-  .branches {
-    fill: @iconColor1;
-    .transition(all 1.7s ease);
-    .branche1 {
-      .transform-origin(0% 100%);
-    }
-    .branche2 {
-      .transform-origin(0% 0%);
-    }
-    .branche3 {
-      .transform-origin(5% 40%);
-    }
-    .branche4 {
-      .transform-origin(100% 0%);
-    }
-    .branche5 {
-      .transform-origin(100% 95%);
-    }
-    .branche6 {
-      .transform-origin(96% 95%);
-    }
-  }
-  &:hover {
-    cursor: pointer;
-    .branches {
-      fill: @iconColor3;
-      .transition(all 1.7s ease);
-      .branche1 {
-        .animation(rotation1 .7s ease forwards);
-        animation-delay: 3.0s;
-      }
-      .branche2 {
-        .animation(rotation2 .9s ease forwards);
-        animation-delay: 2.8s;
-      }
-      .branche3 {
-        .animation(rotation3 1.1s ease forwards);
-        animation-delay: 2.7s;
-      }
-      .branche4 {
-        .animation(rotation4 .8s ease forwards);
-        animation-delay: 2.6s;
-      }
-      .branche5 {
-        .animation(rotation5 .8s ease forwards);
-        animation-delay: 2.3s;
-      }
-      .branche6 {
-        .animation(rotation6 1.0s ease forwards);
-        animation-delay: 2.7s;
-      }
-    }
+[class^="btn-"] {
+  .contributeurs_icon {
     .tache {
-      fill: @black;
-      opacity: 1;
-      transition: all 1.7s ease;
+      fill: #3d3d3d;
+      opacity: .5;
+      .transition(all 1.7s ease);
     }
     .forme {
+      fill: @iconColor3;
+      .cercle {
+        fill: @iconColor1;
+      }
       .fleche {
-        fill: @white;
-        transform: rotate(180deg);
-        transition: all 2.7s ease-in;
+        fill: @iconColor3;
+        .transform-origin(50% 50%);
+        .rotate(0deg);
+        .transition(all 2.7s ease-out);
+      }
+    }
+    .branches {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+      .branche1 {
+        .transform-origin(0% 100%);
+      }
+      .branche2 {
+        .transform-origin(0% 0%);
+      }
+      .branche3 {
+        .transform-origin(5% 40%);
+      }
+      .branche4 {
+        .transform-origin(100% 0%);
+      }
+      .branche5 {
+        .transform-origin(100% 95%);
+      }
+      .branche6 {
+        .transform-origin(96% 95%);
+      }
+    }
+    }
+  &:hover {
+    .contributeurs_icon {
+      cursor: pointer;
+      .branches {
+        fill: @iconColor3;
+        .transition(all 1.7s ease);
+        .branche1 {
+          .animation(rotation1 .7s ease forwards);
+          animation-delay: 3.0s;
+        }
+        .branche2 {
+          .animation(rotation2 .9s ease forwards);
+          animation-delay: 2.8s;
+        }
+        .branche3 {
+          .animation(rotation3 1.1s ease forwards);
+          animation-delay: 2.7s;
+        }
+        .branche4 {
+          .animation(rotation4 .8s ease forwards);
+          animation-delay: 2.6s;
+        }
+        .branche5 {
+          .animation(rotation5 .8s ease forwards);
+          animation-delay: 2.3s;
+        }
+        .branche6 {
+          .animation(rotation6 1.0s ease forwards);
+          animation-delay: 2.7s;
+        }
+      }
+      .tache {
+        fill: @black;
+        opacity: 1;
+        transition: all 1.7s ease;
+      }
+      .forme {
+        .fleche {
+          fill: @white;
+          transform: rotate(180deg);
+          transition: all 2.7s ease-in;
+        }
       }
     }
   }
