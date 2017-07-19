@@ -1449,6 +1449,115 @@
   -moz-animation: glitch 2s infinite;
   animation: glitch 2s infinite;
 }
+/* tag 1 */
+.icon-tag .tag1_icon {
+  fill: #ededed;
+  width: 39px;
+  height: 34px;
+}
+/* tag 2 */
+/* facebook */
+[class^="btn-"] .facebook_icon .fond {
+  fill: #ededed;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"] .facebook_icon .branches {
+  fill: #6d6d6d;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"] .facebook_icon .taches {
+  fill: #ededed;
+}
+[class^="btn-"] .facebook_icon .taches .tache1 {
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"] .facebook_icon .taches .tache2 {
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"]:hover .facebook_icon {
+  cursor: pointer;
+}
+[class^="btn-"]:hover .facebook_icon .fond {
+  fill: #ffffff;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"]:hover .facebook_icon .taches .tache1 {
+  fill: #010202;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"]:hover .facebook_icon .taches .tache2 {
+  fill: #010202;
+  transition: all 3.5s ease;
+  -webkit-transition: all 3.5s ease;
+  -o-transition: all 3.5s ease;
+  -moz-transition: all 3.5s ease;
+}
+[class^="btn-"]:hover .facebook_icon .branches {
+  fill: #ffffff;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+  -webkit-animation: glitch 3s infinite;
+  -moz-animation: glitch 3s infinite;
+  animation: glitch 3s infinite;
+}
+/* twitter */
+[class^="btn-"] .twitter_icon .corps {
+  fill: #ededed;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"] .twitter_icon .serre,
+[class^="btn-"] .twitter_icon .aile {
+  fill: #6d6d6d;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"] .twitter_icon .oeil {
+  fill: #010202;
+}
+[class^="btn-"]:hover .twitter_icon {
+  cursor: pointer;
+  animation: glitch 3s infinite;
+}
+[class^="btn-"]:hover .twitter_icon .corps {
+  fill: #ffffff;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"]:hover .twitter_icon .aile,
+[class^="btn-"]:hover .twitter_icon .serre {
+  fill: #ffffff;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
 /* consulter */
 [class^="btn-"] .consulter_icon .taches {
   fill: #3d3d3d;
@@ -1730,6 +1839,10 @@
 * {
   box-sizing: border-box;
 }
+.glitch-effect {
+  width: 0;
+  height: 0;
+}
 /* body */
 body {
   margin: 0;
@@ -1856,6 +1969,136 @@ header nav .infos .btn-nav-infos {
 header nav .contributeurs .btn-nav-contributeurs {
   width: 97px;
   height: 95px;
+}
+/* page content */
+.page-content {
+  color: #ffffff;
+  height: calc(100vh - 130px);
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.page-content .text-centent {
+  height: 381px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.page-content .text-centent .text-block {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.page-content .text-centent .text-block [class^="item-"] {
+  text-align: center;
+}
+.page-content .text-centent .text-block .item-tag,
+.page-content .text-centent .text-block .item-partage,
+.page-content .text-centent .text-block .item-auteur {
+  width: 33%;
+}
+.page-content .text-centent .text-block .item-date {
+  width: 100%;
+  font-size: 17px;
+  color: #a4a3a0;
+}
+.page-content .text-centent .text-block .item-text {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  font-size: 25px;
+  color: #dcdad5;
+}
+.page-content .text-centent .text-block .item-tag {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: flex-start;
+  -moz-box-pack: flex-start;
+  -ms-flex-pack: sstarts;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.page-content .text-centent .text-block .item-tag .icon-tag {
+  margin-right: 10px;
+}
+.page-content .text-centent .text-block .item-tag .name-tag {
+  font-size: 17px;
+  color: #a4a3a0;
+}
+.page-content .text-centent .text-block .item-partage {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.page-content .text-centent .text-block .item-partage .item-facebook .btn-facebook {
+  width: 38px;
+  height: 49px;
+  margin-right: 15px;
+}
+.page-content .text-centent .text-block .item-partage .item-twitter .btn-twitter {
+  width: 57px;
+  height: 49px;
+}
+.page-content .text-centent .text-block .item-auteur {
+  text-align: right;
+  font-size: 15px;
+  color: #a4a3a0;
+}
+.page-content .random-content {
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+}
+.page-content .datepicker-content {
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
 }
 /* ratio & display */
 .container.hidden,

@@ -313,6 +313,96 @@
   }
 }
 
+/* tag 1 */
+.icon-tag {
+  .tag1_icon {
+    fill: @iconColor3;
+    width: 39px;
+    height: 34px;
+  }
+}
+
+/* tag 2 */
+
+
+/* facebook */
+[class^="btn-"] {
+  .facebook_icon {
+    .fond {
+      fill: @iconColor3;
+      .transition(all 1.7s ease);
+    }
+    .branches {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+    }
+    .taches {
+      fill: @iconColor3;
+      .tache1 {
+        .transition(all 1.7s ease);
+      }
+      .tache2 {
+        .transition(all 1.7s ease);
+      }
+    }
+  }
+  &:hover {
+    .facebook_icon {
+      cursor: pointer;
+      .fond {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+      .taches {
+        .tache1 {
+          fill: @black;
+          .transition(all 1.7s ease);
+        }
+        .tache2 {
+          fill: @black;
+          .transition(all 3.5s ease);
+        }
+      }
+      .branches {
+        fill: @white;
+        .transition(all 1.7s ease);
+        .animation(glitch 3s infinite);
+      }
+    }
+  }
+}
+
+/* twitter */
+[class^="btn-"] {
+  .twitter_icon {
+    .corps {
+      fill: @iconColor3;
+      .transition(all 1.7s ease);
+    }
+    .serre, .aile {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+    }
+    .oeil {
+      fill: @black;
+    }
+  }
+  &:hover {
+    .twitter_icon {
+      cursor: pointer;
+      animation: glitch 3s infinite;
+      .corps {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+      .aile, .serre {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+    }
+  }
+}
+
 /* consulter */
 [class^="btn-"] {
   .consulter_icon {
@@ -424,7 +514,6 @@
     }
   }
 }
-
 
 /* infos */
 [class^="btn-"] {

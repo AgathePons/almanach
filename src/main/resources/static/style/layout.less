@@ -4,6 +4,11 @@
   box-sizing:border-box;
 }
 
+.glitch-effect {
+  width: 0;
+  height: 0;
+}
+
 /* body */
 body {
   margin: 0;
@@ -125,6 +130,89 @@ header {
         height: 95px;
       }
     }
+  }
+}
+
+/* page content */
+.page-content {
+  color: @white;
+  height: calc(~"100vh - 130px");
+  .flex-block();
+  .flex-direction(column);
+  .align-items(center);
+  .text-centent {
+    height: 381px;
+    width: 100%;
+    .flex-block();
+    .text-block {
+      .flex-block();
+      .flex-wrap(wrap);
+      .align-items(center);
+      align-content: center;
+      .justify-content(center);
+      [class^="item-"] {
+        text-align: center;
+      }
+      .item-tag, .item-partage, .item-auteur {
+        width: 33%;
+      }
+      .item-date {
+        width: 100%;
+        font-size: 17px;
+        color: @whiteText3;
+      }
+      .item-text {
+        width: 100%;
+        margin: 10px 0 20px 0;
+        font-size: 25px;
+        color: @whiteText2;
+      }
+      .item-tag {
+        .flex-block();
+        .align-items(center);
+        .justify-content(flex-start);
+        .icon-tag {
+          margin-right: 10px;
+        }
+        .name-tag {
+          font-size: 17px;
+          color: @whiteText3;
+        }
+      }
+      .item-partage {
+        .flex-block();
+        .align-items(center);
+        .justify-content(center);
+        .item-facebook {
+          .btn-facebook {
+            width: 38px;
+            height: 49px;
+            margin-right: 15px;
+          }
+        }
+        .item-twitter {
+          .btn-twitter {
+            width: 57px;
+            height: 49px;
+          }
+        }
+      }
+      .item-auteur {
+        text-align: right;
+        font-size: 15px;
+        color: @whiteText3;
+      }
+    }
+  }
+  .random-content {
+    .flex-grow(1);
+    width: 100%;
+    text-align: center;
+  }
+  .datepicker-content {
+    .flex-grow(1);
+    width: 100%;
+    text-align: center;
   }
 }
 
