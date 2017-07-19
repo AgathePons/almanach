@@ -1297,15 +1297,375 @@
     transform: rotate(-290deg);
   }
 }
-@keyframes rotation-infinite {
+@-webkit-keyframes rotation-infinite {
   from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
     transform: rotate(-360deg);
   }
 }
-/* pulsation */
+@-moz-keyframes rotation-infinite {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-ms-keyframes rotation-infinite {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-o-keyframes rotation-infinite {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotation-infinite {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+/* pulsations */
+@-webkit-keyframes pulse4 {
+  0% {
+    fill: #6d6d6d;
+  }
+  30% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-moz-keyframes pulse4 {
+  0% {
+    fill: #6d6d6d;
+  }
+  30% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-ms-keyframes pulse4 {
+  0% {
+    fill: #6d6d6d;
+  }
+  30% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-o-keyframes pulse4 {
+  0% {
+    fill: #6d6d6d;
+  }
+  30% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@keyframes pulse4 {
+  0% {
+    fill: #6d6d6d;
+  }
+  30% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-webkit-keyframes pulse5 {
+  0% {
+    fill: #6d6d6d;
+  }
+  60% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  80% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-moz-keyframes pulse5 {
+  0% {
+    fill: #6d6d6d;
+  }
+  60% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  80% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-ms-keyframes pulse5 {
+  0% {
+    fill: #6d6d6d;
+  }
+  60% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  80% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-o-keyframes pulse5 {
+  0% {
+    fill: #6d6d6d;
+  }
+  60% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  80% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@keyframes pulse5 {
+  0% {
+    fill: #6d6d6d;
+  }
+  60% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  80% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-webkit-keyframes pulse6 {
+  0% {
+    fill: #6d6d6d;
+  }
+  65% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-moz-keyframes pulse6 {
+  0% {
+    fill: #6d6d6d;
+  }
+  65% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-ms-keyframes pulse6 {
+  0% {
+    fill: #6d6d6d;
+  }
+  65% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-o-keyframes pulse6 {
+  0% {
+    fill: #6d6d6d;
+  }
+  65% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@keyframes pulse6 {
+  0% {
+    fill: #6d6d6d;
+  }
+  65% {
+    fill: #6d6d6d;
+  }
+  70% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #6d6d6d;
+  }
+  100% {
+    fill: #6d6d6d;
+  }
+}
+@-webkit-keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes pulse8 {
   0% {
     opacity: 0;
@@ -1456,6 +1816,97 @@
   height: 34px;
 }
 /* tag 2 */
+/* datepicker */
+[class^="btn-"] .datepicker_icon .fond {
+  fill: #3d3d3d;
+  opacity: .5;
+  transition: all 1.7s ease;
+}
+[class^="btn-"] .datepicker_icon .grille {
+  fill: #ededed;
+}
+[class^="btn-"] .datepicker_icon .points {
+  fill: #ededed;
+}
+[class^="btn-"]:hover .datepicker_icon {
+  cursor: pointer;
+}
+[class^="btn-"]:hover .datepicker_icon .fond {
+  fill: #010202;
+  opacity: 1;
+  transition: all 1.7s ease;
+  -webkit-transition: all 1.7s ease;
+  -o-transition: all 1.7s ease;
+  -moz-transition: all 1.7s ease;
+}
+[class^="btn-"]:hover .datepicker_icon .grille {
+  -webkit-animation: glitch 3s infinite;
+  -moz-animation: glitch 3s infinite;
+  animation: glitch 3s infinite;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point1 {
+  -webkit-animation: pulse4 1.5s ease infinite;
+  -moz-animation: pulse4 1.5s ease infinite;
+  animation: pulse4 1.5s ease infinite;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point2 {
+  -webkit-animation: pulse5 3.5s ease infinite;
+  -moz-animation: pulse5 3.5s ease infinite;
+  animation: pulse5 3.5s ease infinite;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point3 {
+  -webkit-animation: pulse4 1s ease infinite;
+  -moz-animation: pulse4 1s ease infinite;
+  animation: pulse4 1s ease infinite;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point4 {
+  -webkit-animation: pulse6 4.5s ease infinite;
+  -moz-animation: pulse6 4.5s ease infinite;
+  animation: pulse6 4.5s ease infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point5 {
+  -webkit-animation: pulse5 4.5s ease infinite;
+  -moz-animation: pulse5 4.5s ease infinite;
+  animation: pulse5 4.5s ease infinite;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point6 {
+  -webkit-animation: pulse6 4.5s ease infinite;
+  -moz-animation: pulse6 4.5s ease infinite;
+  animation: pulse6 4.5s ease infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point7 {
+  -webkit-animation: pulse6 3.7s ease infinite;
+  -moz-animation: pulse6 3.7s ease infinite;
+  animation: pulse6 3.7s ease infinite;
+  -webkit-animation-delay: 3.1s;
+  animation-delay: 3.1s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point8 {
+  -webkit-animation: pulse4 1.5s ease infinite;
+  -moz-animation: pulse4 1.5s ease infinite;
+  animation: pulse4 1.5s ease infinite;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+[class^="btn-"]:hover .datepicker_icon .points .point9 {
+  -webkit-animation: pulse5 3.5s ease infinite;
+  -moz-animation: pulse5 3.5s ease infinite;
+  animation: pulse5 3.5s ease infinite;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
 /* facebook */
 [class^="btn-"] .facebook_icon .fond {
   fill: #ededed;
@@ -1632,6 +2083,7 @@
 /* illustrations */
 [class^="btn-"] .illustrations_icon .forme {
   fill: #ededed;
+  opacity: 1;
   transform-origin: 50% 50%;
   transform: rotate(0deg);
   transition: all .7s ease;
@@ -1644,6 +2096,7 @@
 [class^="btn-"]:hover .illustrations_icon .forme {
   animation: rotation-infinite 1.3s linear infinite;
   fill: #6d6d6d;
+  opacity: .5;
   transition: all 1s ease;
 }
 [class^="btn-"]:hover .illustrations_icon .points {
@@ -1988,7 +2441,7 @@ header nav .contributeurs .btn-nav-contributeurs {
   align-items: center;
 }
 .page-content .text-centent {
-  height: 381px;
+  height: 380px;
   width: 100%;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -2092,13 +2545,39 @@ header nav .contributeurs .btn-nav-contributeurs {
   width: 100%;
   text-align: center;
 }
+.page-content .random-content .filtre .btn-modal {
+  width: 80px;
+}
 .page-content .datepicker-content {
   -moz-flex-grow: 1;
   -ms-flex-grow: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
   width: 100%;
-  text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: ccenterc;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.page-content .datepicker-content .btn-modal {
+  width: 75px;
+}
+.page-content .separator {
+  width: 225px;
+  height: 30px;
+  overflow: visible;
+}
+.page-content .separator .separator_icon {
+  fill: #6d6d6d;
 }
 /* ratio & display */
 .container.hidden,

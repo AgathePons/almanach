@@ -189,33 +189,94 @@
   }
 );
 
-@keyframes rotation-infinite {
-  from {
-    transform: rotate(0deg);
+.keyframes(rotation-infinite;
+  {
+    from {
+      .transform(rotate(0deg));
+    }
+    to {
+      .transform(rotate(-360deg));
+    }
   }
-  to {
-    transform: rotate(-360deg);
-  }
-}
+);
 
-/* pulsation */
-@keyframes pulse8 {
-  0% {
-    opacity: 0;
+/* pulsations */
+.keyframes(pulse4;
+  {
+    0% {
+      fill: @iconColor1;
+    }
+    30% {
+      fill: @iconColor1;
+    }
+    70% {
+        fill: @white;
+    }
+    100% {
+        fill: @iconColor1;
+    }
   }
-  20% {
-    opacity: 0;
+);
+
+.keyframes(pulse5;
+  {
+    0% {
+      fill: @iconColor1;
+    }
+    60% {
+      fill: @iconColor1;
+    }
+    70% {
+        fill: @white;
+    }
+    80% {
+      fill: @iconColor1;
+    }
+    100% {
+        fill: @iconColor1;
+    }
   }
-  32% {
-    opacity: 1;
+);
+
+.keyframes(pulse6;
+  {
+    0% {
+      fill: @iconColor1;
+    }
+    65% {
+      fill: @iconColor1;
+    }
+    70% {
+        fill: @white;
+    }
+    75% {
+      fill: @iconColor1;
+    }
+    100% {
+        fill: @iconColor1;
+    }
   }
-  52% {
-    opacity: 0;
-  }
-  100% {
+);
+
+.keyframes(pulse8;
+  {
+    0% {
       opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    32% {
+      opacity: 1;
+    }
+    52% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
   }
-}
+);
 
 /* -- ICONS -- */
 
@@ -324,6 +385,74 @@
 
 /* tag 2 */
 
+
+/* datepicker */
+[class^="btn-"] {
+  .datepicker_icon {
+    .fond {
+      fill: @iconColor2;
+      opacity: .5;
+      transition: all 1.7s ease;
+    }
+    .grille {
+      fill: @iconColor3;
+    }
+    .points {
+      fill: @iconColor3;
+    }
+  }
+  &:hover {
+    .datepicker_icon {
+      cursor: pointer;
+      .fond {
+        fill: @black;
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+      .grille {
+        .animation(glitch 3s infinite;)
+      }
+      .points {
+        .point1 {
+          .animation(pulse4 1.5s ease infinite);
+          .animation-delay(.6s);
+        }
+        .point2 {
+          .animation(pulse5 3.5s ease infinite);
+          .animation-delay(.4s);
+        }
+        .point3 {
+          .animation(pulse4 1.0s ease infinite);
+          .animation-delay(.3s);
+        }
+        .point4 {
+          .animation(pulse6 4.5s ease infinite);
+          .animation-delay(0s);
+        }
+        .point5 {
+          .animation(pulse5 4.5s ease infinite);
+          .animation-delay(1.2s);
+        }
+        .point6 {
+          .animation(pulse6 4.5s ease infinite);
+          .animation-delay(2s);
+        }
+        .point7 {
+          .animation(pulse6 3.7s ease infinite);
+          .animation-delay(3.1s);
+        }
+        .point8 {
+          .animation(pulse4 1.5s ease infinite);
+          .animation-delay(1.3s);
+        }
+        .point9 {
+          .animation(pulse5 3.5s ease infinite);
+          .animation-delay(1.2s);
+        }
+      }
+    }
+  }
+}
 
 /* facebook */
 [class^="btn-"] {
@@ -458,6 +587,7 @@
   .illustrations_icon {
     .forme {
       fill: @iconColor3;
+      opacity: 1;
       transform-origin: 50% 50%;
       transform: rotate(0deg);
       transition: all .7s ease;
@@ -473,6 +603,7 @@
       .forme {
         animation: rotation-infinite 1.3s linear infinite;
         fill: @iconColor1;
+        opacity: .5;
         transition: all 1s ease;
       }
       .points {
