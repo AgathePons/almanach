@@ -278,6 +278,27 @@
   }
 );
 
+/* blink */
+.keyframes(blink1;
+  {
+    0% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+);
+
 /* -- ICONS -- */
 
 /* close */
@@ -384,7 +405,127 @@
 }
 
 /* tag 2 */
+[class^="btn-"] {
+  .tag_icon {
+    .fond {
+      fill: @iconColor2;
+      opacity: .5;
+      .transition(all 1.7s ease);
+    }
+    .symbole {
+      fill: @iconColor3;
+      [class^="point"] {
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+    }
+    .branches {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+    }
+  }
+  &:hover, &.active {
+    cursor: pointer;
+    .fond {
+      fill: @black;
+      opacity: 1;
+      .transition(all 1.7s ease);
+    }
+    .branches {
+      fill: @white;
+      .transition(all 1.7s ease);
+      .animation(glitch 2s infinite);
+    }
+    .symbole {
+      fill: @white;
+      .transition(all 1.7s ease);
+      [class^="point"] {
+        fill: @white;
+        opacity: 0;
+        .transition(all 1.7s ease);
+        .animation(pulse8 2s infinite);
+      }
+      .point1 {
+        animation-delay: 0;
+      }
+      .point2 {
+        animation-delay: .2s;
+      }
+      .point3 {
+        animation-delay: .4s;
+      }
+    }
+  }
+}
 
+/* random */
+[class^="btn-"] {
+  .random_icon {
+    fill: @iconColor3;
+    [class^="face"] {
+      opacity: 1;
+    }
+    .face01, .face09 {
+      .animation(glitch 3.2s infinite);
+    }
+    .face02, .face06 {
+      .animation(glitch 5.2s infinite);
+    }
+    .face03, face04 {
+      .animation(glitch 7.5s infinite);
+    }
+    .face05, face08 {
+      .animation(glitch 4.0s infinite);
+    }
+    .face07, face10 {
+      .animation(glitch 2.9s infinite);
+    }
+  }
+  &:hover {
+    .random_icon {
+      .face01 {
+        .animation(blink1 1.2s ease infinite);
+        .animation-delay(.1s);
+      }
+      .face02 {
+        .animation(blink1 1.0s ease infinite);
+        .animation-delay(.2s);
+      }
+      .face03 {
+        .animation(blink1 1.3s ease infinite);
+        .animation-delay(0);
+      }
+      .face04 {
+        .animation(blink1 1.5s ease infinite);
+        .animation-delay(.3s);
+      }
+      .face05 {
+        .animation(blink1 1.1s infinite);
+        .animation-delay(0s);
+      }
+      .face06 {
+        .animation(blink1 1.4s infinite);
+        .animation-delay(.3s);
+      }
+      .face07 {
+        .animation(blink1 1.7s infinite);
+        .animation-delay(.2s);
+      }
+      .face08 {
+        .animation(blink1 1.9s infinite);
+        .animation-delay(0s);
+      }
+      .face09 {
+        .animation(blink1 2.0s infinite);
+        .animation-delay(0s);
+      }
+      .face10 {
+        .animation(blink1 1.8s infinite);
+        .animation-delay(.1s);
+      }
+    }
+  }
+}
 
 /* datepicker */
 [class^="btn-"] {
@@ -392,7 +533,7 @@
     .fond {
       fill: @iconColor2;
       opacity: .5;
-      transition: all 1.7s ease;
+      .transition(all 1.7s ease);
     }
     .grille {
       fill: @iconColor3;
@@ -588,58 +729,58 @@
     .forme {
       fill: @iconColor3;
       opacity: 1;
-      transform-origin: 50% 50%;
-      transform: rotate(0deg);
-      transition: all .7s ease;
+      .transform-origin(50% 50%);
+      .rotate(0deg);
+      .transition(all .7s ease);
     }
     .points {
       fill: @iconColor1;
       opacity: 1;
-      transition: all .7s ease;
+      .transition(all .7s ease);
     }
   }
   &:hover {
     .illustrations_icon {
       .forme {
-        animation: rotation-infinite 1.3s linear infinite;
+        .animation(rotation-infinite 1.3s linear infinite);
         fill: @iconColor1;
         opacity: .5;
-        transition: all 1s ease;
+        .transition(all 1s ease);
       }
       .points {
-        transition: all 1.7s ease;
+        .transition(all 1.7s ease);
         [class^="point"] {
           fill: @white;
           opacity: 0;
-          transition: all 1.7s ease;
-          animation: pulse8 2s infinite;
+          .transition(all 1.7s ease);
+          .animation(pulse8 2s infinite);
         }
         .point9 {
-          animation-delay: 0;
+          .animation-delay(0);
         }
         .point8 {
-          animation-delay: .2s;
+          .animation-delay(.2s);
         }
         .point7 {
-          animation-delay: .4s;
+          .animation-delay(.4s);
         }
         .point6 {
-          animation-delay: .6s;
+          .animation-delay(.6s);
         }
         .point5 {
-          animation-delay: .8s;
+          .animation-delay(.8s);
         }
         .point4 {
-          animation-delay: 1.0s;
+          .animation-delay(1.0s);
         }
         .point3 {
-          animation-delay: 1.2s;
+          .animation-delay(1.2s);
         }
         .point2 {
-          animation-delay: 1.4s;
+          .animation-delay(1.4s);
         }
         .point1 {
-          animation-delay: 1.6s;
+          .animation-delay(1.6s);
         }
       }
     }
