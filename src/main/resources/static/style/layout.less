@@ -26,6 +26,12 @@ body {
   }
 }
 
+body.home {
+  .container-flex {
+    max-height: 100vh;
+  }
+}
+
 /* container flex */
 .container-flex {
   display: block;
@@ -145,6 +151,7 @@ header {
     width: 100%;
     .flex-block();
     .text-block {
+      width: 100%;
       .flex-block();
       .flex-wrap(wrap);
       .align-items(center);
@@ -173,6 +180,8 @@ header {
         .justify-content(flex-start);
         .icon-tag {
           margin-right: 10px;
+          width: 39px;
+          height: 34px;
         }
         .name-tag {
           font-size: 17px;

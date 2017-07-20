@@ -1,9 +1,11 @@
-/* RWD for layout */
+/* --- RWD for layout --- */
+
 @media screen and (max-width: 1023px) {
   .container-flex {
     padding: 15px;
+    max-width: 350px;
   }
-  
+  /* header */
   header {
     .rwd-title {
       display: block;
@@ -48,6 +50,90 @@
           padding-top: 3px;
         }
       }
+    }
+  }
+  /* home */
+  .page-content {
+    height: calc(~"100vh - 155px");
+    .text-centent {
+      height: auto;
+      .flex-grow(1);
+      .text-block {
+        .item-date {
+          .order(0);
+          font-size: 14px;
+          width: 50%;
+          text-align: right;
+          padding-right: 5px;
+        }
+        .item-text {
+          .order(2);
+          font-size: 16px;
+          margin: 5px 0 7px 0;
+        }
+        .item-tag {
+          .order(1);
+          font-size: 14px;
+          width: 50%;
+          .icon-tag {
+            width: 21px;
+            height: 18px;
+            margin: 0 5px;
+          }
+        }
+        .item-partage {
+          .order(3);
+          width: 30%;
+          .justify-content(flex-start);
+          .item-facebook {
+            .btn-facebook {
+              width: 22px;
+              height: 24px;
+              margin-right: 5px;
+            }
+          }
+          .item-twitter {
+            .btn-twitter {
+              width: 28px;
+              height: 24px;
+            }
+          }
+        }
+        .item-auteur {
+          .order(4);
+          font-size: 13px;
+          width: 70%;
+        }
+      }
+    }
+    .random-content {
+      .filtre {
+        margin: -5px 0 0 0;
+        .btn-modal {
+          width: 35px;
+          height: 31px;
+        }
+      }
+      .random {
+        margin-bottom: 0;
+        .btn-random {
+          width: 45px;
+          height: 46px;
+        }
+      }
+    }
+    .datepicker-content {
+      margin-bottom: 0;
+      .btn-modal {
+        width: 45px;
+        height: 59px;
+      }
+    }
+    [class^="separator-"] {
+      width: 100px;
+    }
+    .separator-2 {
+      height: 5px;
     }
   }
 }
