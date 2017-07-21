@@ -122,6 +122,50 @@
   }
 );
 
+.keyframes(tremblement3;
+  {
+    10% {
+      .transform(translate(2px, 3px) rotate(-2deg));
+      opacity: 1;
+    }
+    20% {
+      .transform(translate(3px, 3px) rotate(-4deg));
+      opacity: 0.71;
+    }
+    30% {
+      .transform(translate(2px, 5px) rotate(3deg));
+      opacity: 0.83;
+    }
+    40% {
+      .transform(translate(5px, 2px) rotate(-4deg));
+      opacity: 0.5;
+    }
+    50% {
+      .transform(translate(4px, -5px) rotate(2deg));
+      opacity: 0.71;
+    }
+    60% {
+      .transform(translate(-3px, 2px) rotate(2deg));
+      opacity: 0.42;
+    }
+    70% {
+      .transform(translate(-5px, 5px) rotate(3deg));
+      opacity: 0.7;
+    }
+    80% {
+      .transform(translate(-2px, -1px) rotate(-2deg));
+      opacity: 0.62;
+    }
+    90% {
+      .transform(translate(-4px, 2px) rotate(4deg));
+      opacity: 0.5;
+    }
+    0%, 100% {
+      .transform(translate(0, 0) rotate(0));
+    }
+  }
+);
+
 /* rotations */
 .keyframes(rotation1;
   {
@@ -254,6 +298,26 @@
     }
     100% {
         fill: @iconColor1;
+    }
+  }
+);
+
+.keyframes(pulse7;
+  {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    32% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
   }
 );
@@ -451,6 +515,150 @@
       }
       .point3 {
         animation-delay: .4s;
+      }
+    }
+  }
+}
+
+/* tag 3 */
+[class^="btn-"] {
+  .tag3_icon {
+    .symbole {
+      fill: @iconColor1;
+      [class^="point"] {
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+    }
+  .branches {
+      fill: @iconColor3;
+      .transition(all 1.7s ease);
+    }
+  }
+  &:hover, &.active {
+    cursor: pointer;
+    .tag3_icon {
+      .branches {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+      .symbole {
+        fill: @iconColor3;
+        .transition(all 1.7s ease);
+        [class^="point"] {
+          fill: @iconColor3;
+          opacity: 0;
+          .transition(all 1.7s ease);
+          .animation(pulse8 2s infinite);
+        }
+        .point1 {
+          .animation-delay(0);
+        }
+        .point2 {
+          .animation-delay(.2s);
+        }
+        .point3 {
+          .animation-delay(.4s);
+        }
+      }
+    }
+  }
+}
+
+/* mois */
+[class^="btn-"] {
+  .mois_icon {
+    .lunes {
+      fill: @iconColor1;
+      opacity: 1;
+      .transition(all 1.7s ease);
+    }
+    .montagnes {
+      fill: @iconColor3;
+      .transition(all 1.7s ease);
+    }
+  }
+  &:hover, &.active {
+    .mois_icon {
+      cursor: pointer;
+      .montagnes {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+      .lunes {
+        .transition(all 1.7s ease);
+        [class^="lune"] {
+          fill: @white;
+          opacity: 0;
+          .transition(all 1.7s ease);
+          .animation(pulse7 7s infinite);
+        }
+        .lune1 {
+          .animation-delay(0);
+        }
+        .lune2 {
+          .animation-delay(.1s);
+        }
+        .lune3 {
+          .animation-delay(.3s);
+        }
+        .lune4 {
+          .animation-delay(.5s);
+        }
+        .lune5 {
+          .animation-delay(.7s);
+        }
+        .lune6 {
+          .animation-delay(.9s);
+        }
+        .lune7 {
+          .animation-delay(1.1s);
+        }
+        .lune8 {
+          .animation-delay(1.3s);
+        }
+        .lune9 {
+          .animation-delay(1.5s);
+        }
+      }
+    }
+  }
+}
+
+/* auteur */
+[class^="btn-"] {
+  .auteur_icon {
+    .corps, .tete {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+    }
+    [class^="points-"] {
+      fill: @iconColor3;
+      opacity: 1;
+      .transition(all 1.7s ease);
+    }
+  }
+  &:hover, &.active {
+    .auteur_icon {
+      cursor: pointer;
+      .corps, .tete {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+      [class^="points-"] {
+        fill: @white;
+        opacity: 0;
+        .transition(all 1.7s ease);
+        .animation(pulse8 2s infinite);
+      }
+      .points-internes {
+        .animation-delay(.3s);
+      }
+      .points-externes-1 {
+        .animation-delay(.6s);
+      }
+      .points-externes-2 {
+        .animation-delay(.9s);
       }
     }
   }
@@ -664,6 +872,68 @@
         .transition(all 1.7s ease);
       }
       .aile, .serre {
+        fill: @white;
+        .transition(all 1.7s ease);
+      }
+    }
+  }
+}
+
+/* home */
+[class^="btn-"] {
+  .home_icon {
+    .symbole {
+      .transition(all 1.7s ease);
+      [class^="rayon"] {
+        opacity: 1;
+        .transition(all 1.7s ease);
+      }
+      fill: @iconColor3;
+    }
+    .branches {
+      fill: @iconColor1;
+      .transition(all 1.7s ease);
+    }
+  }
+  &:hover {
+    .home_icon {
+      .symbole {
+        fill: @iconColor1;
+        opacity: .5;
+        .transition(all 1.7s ease);
+        .arc3 {
+          .animation(tremblement2 0.5s infinite);
+        }
+        .arc2 {
+          .animation(tremblement2 1s infinite);
+        }
+        .arc1 {
+          .animation(tremblement3 1.3s infinite);
+        }
+        [class^="rayon"] {
+          fill: @white;
+          opacity: 0;
+          .transition(all 1.7s ease);
+          .animation(pulse8 2s infinite);
+        }
+        .rayon1 {
+          .animation-delay(0);
+        }
+        .rayon2 {
+          .animation-delay(.2s);
+        }
+        .rayon3 {
+          .animation-delay(.4s);
+        }
+        .rayon4 {
+          .animation-delay(.6s);
+        }
+        .rayon5 {
+          .animation-delay(.8s);
+        }
+      }
+      .branches {
+        animation: glitch 3s infinite;
         fill: @white;
         .transition(all 1.7s ease);
       }

@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../img/backgrounds/04-peril.jpg");
+  background-image: url("../img/backgrounds/09-serpente.jpg");
   background-color: @black;
   background-repeat: no-repeat;
   background-position: center center;
@@ -26,9 +26,15 @@ body {
   }
 }
 
-body.home {
+body.home, body.consultation {
   .container-flex {
     max-height: 100vh;
+  }
+}
+
+body.consultation {
+  .page-content {
+    height: calc(~"100vh - 160px");
   }
 }
 
@@ -83,6 +89,14 @@ header {
     .nav {
       width: 100px;
       text-align: center;
+    }
+    .home {
+      margin-left: -20px;
+      margin-right: 35px;
+      .btn-nav-home {
+        width: 131px;
+        height: 84px;
+      }
     }
     .consultation {
       .btn-nav-consultation {
@@ -139,8 +153,8 @@ header {
   }
 }
 
-/* page content */
-.page-content {
+/* home : page content */
+body.home .page-content {
   color: @white;
   height: calc(~"100vh - 130px");
   .flex-block();
@@ -256,6 +270,33 @@ header {
   }
   .separator-2 {
     height: 25px;
+  }
+}
+
+/* consultation : page content */
+body.consultation .page-content {
+  .filter-bar {
+    .flex-block();
+    .align-items(center);
+    .justify-content(center);
+    [class^="filter-item-"] {
+      margin: 0 46px;
+    }
+    .filter-item-tag {
+      .btn-modal {
+        width: 50px;
+      }
+    }
+    .filter-item-mois {
+      .btn-modal {
+        width: 100px;
+      }
+    }
+    .filter-item-auteur {
+      .btn-modal {
+        width: 50px;
+      }
+    }
   }
 }
 
