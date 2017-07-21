@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../img/backgrounds/09-serpente.jpg");
+  background-image: url("../img/backgrounds/11-vomembres.jpg");
   background-color: @black;
   background-repeat: no-repeat;
   background-position: center center;
@@ -150,11 +150,11 @@ header {
 /* home : page content */
 body.home .page-content {
   color: @white;
-  height: calc(~"100vh - 130px");
+  height: calc(~"100vh - 160px");
   .flex-block();
   .flex-direction(column);
   .align-items(center);
-  .text-centent {
+  .text-content {
     height: 350px;
     width: 100%;
     .flex-block();
@@ -274,6 +274,7 @@ body.consultation .page-content {
     .flex-block();
     .align-items(center);
     .justify-content(center);
+    height: 70px;
     [class^="filter-item-"] {
       margin: 0 46px;
     }
@@ -290,6 +291,88 @@ body.consultation .page-content {
     .filter-item-auteur {
       .btn-modal {
         width: 50px;
+      }
+    }
+  }
+  .text-content {
+    height: calc(~"100vh - 200px");
+    padding-bottom: 15px;
+    .text-block {
+      .flex-block();
+      .flex-direction(column);
+      .align-items(center);
+      .item-date {
+        font-size: 17px;
+        color: @whiteText3;
+      }
+      .item-text {
+        text-align: center;
+        font-size: 23px;
+        color: @whiteText2;
+      }
+      .infos {
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        .transition(all .7s ease);
+        .flex-block();
+        .align-items(flex-end);
+        .justify-content(space-around);
+        .item-tag {
+          width: 33%;
+          .flex-block();
+          .align-items(center);
+          .justify-content(center);
+          .icon-tag {
+            margin-right: 10px;
+            width: 34px;
+            height: 30px;
+          }
+          .name-tag {
+            font-size: 16px;
+            color: @whiteText3;
+          }
+        }
+        .item-partage {
+          width: 33%;
+          .flex-block();
+          .align-items(center);
+          .justify-content(center);
+          .item-facebook {
+            .btn-facebook {
+              width: 30px;
+              height: 39px;
+              margin-right: 15px;
+            }
+          }
+          .item-twitter {
+            .btn-twitter {
+              width: 46px;
+              height: 39px;
+            }
+          }
+        }
+        .item-auteur {
+          width: 33%;
+          font-size: 15px;
+          color: @whiteText3;
+          text-align: center;
+        }
+      }
+      .separator {
+        width: 225px;
+        overflow: visible;
+        margin-top: 20px;
+        .separator_icon {
+          fill: @iconColor1;
+        }
+      }
+      &:hover {
+        .infos {
+          height: 70px;
+          opacity: 1;
+          .transition(all .7s ease);
+        }
       }
     }
   }
