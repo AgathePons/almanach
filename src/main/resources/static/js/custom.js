@@ -92,7 +92,10 @@ $(document).ready(function () {
     $('.modal').removeClass('opened-modal');
 
     // active or desactive modal button if filters are checked or not
-    if ($('.one-item input:checkbox').is(':checked')) {
+    var modalParent = $(this).parents('.modal');
+    var checkboxModal = modalParent.find('.one-item input:checkbox');
+    
+    if ($(checkboxModal).is(':checked')) {
       //console.log("one checked ! \o/");
       var getClass = $(this).parents('.list-content').attr('class');
       var modalSpecificClass = $.grep(getClass.split(" "), function (v, i) {

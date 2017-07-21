@@ -26,17 +26,11 @@ body {
   }
 }
 
-body.home, body.consultation {
+/*body.home, body.consultation {
   .container-flex {
     max-height: 100vh;
   }
-}
-
-body.consultation {
-  .page-content {
-    height: calc(~"100vh - 160px");
-  }
-}
+}*/
 
 /* container flex */
 .container-flex {
@@ -275,6 +269,7 @@ body.home .page-content {
 
 /* consultation : page content */
 body.consultation .page-content {
+  height: calc(~"100vh - 130px");
   .filter-bar {
     .flex-block();
     .align-items(center);
