@@ -1,13 +1,5 @@
 // Custom JS
 $(document).ready(function () {
-
-  // scroll bottom auto
-  //$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  //return false;
-  
-  if(navigator.userAgent.match(/Android/i)){
-    window.scrollTo(0,1);
-  }
   
   // Carousel
   $(".owl-carousel").owlCarousel({
