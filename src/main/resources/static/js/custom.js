@@ -1,6 +1,10 @@
 // Custom JS
 $(document).ready(function () {
 
+  // scroll bottom auto
+  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  return false;
+  
   // Carousel
   $(".owl-carousel").owlCarousel({
     nav: true,
