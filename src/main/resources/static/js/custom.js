@@ -136,7 +136,7 @@ $(document).ready(function () {
     }
 
     // custom language
-    $.dateRangePickerLanguages['millevaux'] = 
+    $.dateRangePickerLanguages['millevaux'] =
 	{
 		'selected': '',
 		'days': '',
