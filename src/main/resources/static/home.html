@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="style/owl-carousel/owl.theme.default.min.css">
   <!-- scrollbar -->
   <link rel="stylesheet" href="style/scrollbar/jquery.mCustomScrollbar.css">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="style/datepicker/daterangepicker.css">
   <!-- css global -->
   <link rel="stylesheet" href="style/global.css">
 </head>
@@ -125,6 +127,12 @@
           <p>Grouh !</p>
           <h2>I'm a Modal for datepicker !!</h2>
           <p>Rrroooooaarrr :0</p>
+          <div class="datepicker-input" id="datepickerInput">
+            <input class="date-input" id="selectedDate" value="">
+            <div class="datepicker-calendar" id="datePickerCalendar">
+            
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button class="btn-valider" type="button" title="Valider">
@@ -1009,7 +1017,7 @@
         <feConvolveMatrix in="noise" order="3" result="snoise" kernelMatrix="
            0  -1   0
           -1   5  -1
-           0  -1   0    
+           0  -1   0
         " />
         <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
       </filter>
@@ -1018,7 +1026,7 @@
         <feConvolveMatrix in="noise" order="3" result="snoise" kernelMatrix="
            0  -1   0
           -1   5  -1
-           0  -1   0    
+           0  -1   0
         " />
         <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
       </filter>
@@ -1027,7 +1035,7 @@
         <feConvolveMatrix in="noise" order="3" result="snoise" kernelMatrix="
            0  -1   0
           -1   5  -1
-           0  -1   0    
+           0  -1   0
         " />
         <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
       </filter>
@@ -1045,14 +1053,15 @@
   <script src="js/owl-carousel/owl.carousel.min.js"></script>
   <!-- custom scrollbar -->
   <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- datepicker -->
+  <script src="js/datepicker/moment.min.js"></script>
+  <script src="js/datepicker/jquery.daterangepicker.js"></script>
   <!-- custom -->
   <script src="js/custom.js"></script>
 
   <!-- scripts liquid-ink -->
   <script id="vertexShader" type="x-shader/x-vertex">
-
     void main() { gl_Position = vec4(position, 1.0); }
-
   </script>
 
   <script id="fragmentShader" type="x-shader/x-fragment">
